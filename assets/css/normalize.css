@@ -1,0 +1,235 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+iframe,
+ol,
+ul,
+li,
+form,
+label,
+i,
+footer,
+header,
+menu,
+nav,
+a,
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td,
+video,
+canvas,
+section,
+/*commonly used tags*/
+applet,
+object,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+ins,
+kbd,
+hgroup,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+dl,
+dt,
+dd,
+fieldset,
+legend,
+article,
+aside,
+details,
+embed,
+figure,
+figcaption,
+output,
+section,
+summary,
+time,
+mark,
+audio,
+center,
+ruby {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+    position: relative;
+}
+
+ol,
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+* {
+    outline: none !important;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+input,
+button,
+select,
+textarea {
+    display: inline-block;
+    padding: 0;
+    border: 0;
+    font-family: 'Raleway';
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+img {
+    max-width: 100%;
+}
+body {
+    font-family: 'Raleway';
+    background: var(--bg);
+
+}
+
+.container{
+    max-width: 1850px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.sm-container{
+    max-width: 1510px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+
+.d-flex {
+    display: flex;
+}
+.d-block {
+    display: block;
+}
+
+.d-center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+    display: flex;
+}
+
+.justify-around {
+    justify-content: space-around;
+    display: flex;
+}
+
+.justify-end {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+    display: flex;
+}
+
+.align-start {
+    align-items: flex-start;
+    display: flex;
+}
+
+.align-end {
+    align-items: flex-end;
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+    display: flex;
+}
+

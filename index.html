@@ -1,0 +1,1637 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Новый дом у Екатерингофского парка</title>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="header-main align-center">
+            <a href="#" class="logo">
+                <span>ЖК</span> Бумажный
+            </a>
+            <div class="mobile-menu">
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#">О доме</a></li>
+                        <li><a href="#">Реновация</a></li>
+                        <li><a href="#">Галерея</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-contact">
+                    <div class="header-phone flex-column">
+                        <a href="tel:+7 (960) 283-33-88" class="phone-number">+7 (960) 283-33-88</a>
+                        <small>С 10.00-20.00 без выходных</small>
+                    </div>
+
+                    <button class="btn"><span>выбрать квартиру</span></button>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-btn align-center">
+                <div class="header-href align-center">
+                    <a href="#" target="_blank" class="href-soc">
+                        <img src="./assets/img/icons/icon-max.svg" alt="max" loading="lazy">
+                    </a>
+                    <a href="#" target="_blank" class="href-soc">
+                        <img src="./assets/img/icons/icon-telegram.svg" alt="telegram" loading="lazy">
+                    </a>
+                </div>
+                <a href="tel:+7 (960) 283-33-88" class="phone-mob"><img src="./assets/img/icons/phone.svg" alt="phone" loading="lazy"></a>
+                <div class="header-phone flex-column">
+                    <a href="tel:+7 (960) 283-33-88" class="phone-number">+7 (960) 283-33-88</a>
+                    <small>С 10.00-20.00 без выходных</small>
+                </div>
+                <button class="btn"><span>выбрать квартиру</span></button>
+
+                <div class="open-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="banner" id="banner">
+    <div class="container">
+        <div class="banner-main align-center justify-between">
+            <div class="banner-left align-center">
+                <div class="banner-thumbs swiper" id="thumbsSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/img/apart.png" alt="apart" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/apart.png" alt="apart" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/apart.png" alt="apart" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/apart.png" alt="apart" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-info">
+                    <h1>Новый дом у <br>Екатерингофского парка</h1>
+                    <p>Современные квартиры в обновлённом кирпичном доме с WhiteBox в подарок. Рядом
+                        Екатерингофский парк и 6 минут пешком до метро «Нарвская».</p>
+                    <div class="banner-btn align-center">
+                        <a href="#" class="btn"><span>Выбрать квартиру</span></a>
+                        <button class="btn-open-modal href-arrow" data-modal-open="viewing-form">Записаться на просмотр</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="banner-progress">
+                <svg viewBox="0 0 96 96">
+                    <circle class="ring-track" cx="48" cy="48" r="45"></circle>
+                    <circle class="ring-fg" id="ringFg" cx="48" cy="48" r="45"></circle>
+                </svg>
+                <div class="count">
+                    <span class="current" id="countCurrent">01</span>
+                    <span class="total" id="countTotal">/04</span>
+                </div>
+            </div>
+            <div class="banner-right swiper" id="mainSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/img/apart.png" alt="apartment" loading="lazy">
+                        <div class="slide-caption">
+                            <h3>30 квартир в продаже</h3>
+                            <p>Редкий формат камерного дома в исторической части Петербурга.</p>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/apart.png" alt="apartment" loading="lazy">
+
+                        <div class="slide-caption">
+                            <h3>Видовые квартиры</h3>
+                            <p>Панорамные окна с видом на Екатерингофский парк.</p>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/apart.png" alt="apartment" loading="lazy">
+
+                        <div class="slide-caption">
+                            <h3>Отделка WhiteBox</h3>
+                            <p>Готовые стены и полы под чистовую отделку — в подарок каждому покупателю.</p>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/apart.png" alt="apartment" loading="lazy">
+                        <div class="slide-caption">
+                            <h3>6 минут до метро</h3>
+                            <p>Пешая доступность станции «Нарвская» и развитая инфраструктура района.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide-caption-mob">
+                    <h3>30</h3>
+                    <p>Квартир <br> в продаже</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner-nearby">
+        <div class="banner-nearby-flex d-flex">
+            <div class="banner-nearby-text">
+                <h4>Екатерингофский парк рядом</h4>
+                <p>Зелёная зона для прогулок прямо рядом с домом</p>
+            </div>
+            <div class="banner-nearby-text">
+                <h4>6 минут до метро «Нарвская»</h4>
+                <p>Быстрый доступ к центру города</p>
+            </div>
+            <div class="banner-nearby-text">
+                <h4>Дом после реновации</h4>
+                <p>Усиленное здание, новый фасад и современные инженерные системы</p>
+            </div>
+            <div class="banner-nearby-text">
+                <h4>Кирпичные стены до 70 см</h4>
+                <p>Комфорт и высокий уровень шумоизоляции</p>
+            </div>
+            <div class="banner-nearby-text">
+                <h4>WhiteBox в подарок</h4>
+                <p>Квартира подготовлена для создания собственного интерьера</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="place-return" id="placeReturn">
+    <div class="container">
+        <div class="glob-title">
+            <h2>Место, в которое хочется возвращаться <span>каждый день...</span></h2>
+            <p>Дом, где сохранилась атмосфера исторического Петербурга и появились современные стандарты
+                комфорта. Всего 30 квартир — камерный формат жизни рядом с Екатерингофским парком.</p>
+        </div>
+
+        <div class="park-nearby-viewport" id="parkViewport">
+            <div class="park-nearby" id="parkNearby" role="tablist" aria-label="Преимущества дома">
+
+                <div class="park-card-slot">
+                    <div class="park-card is-active" role="tab" aria-selected="true" data-index="0">
+                        <span class="park-card-icon">
+                            <img src="./assets/img/free-park.svg" alt="free-park" loading="lazy"></span>
+                        <span class="park-nearby-info">
+                            <h4>Екатерингофский <br> парк рядом</h4>
+                            <p>Жизнь рядом с природой в центре Петербурга</p>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="park-card-slot">
+                    <div class="park-card" role="tab" aria-selected="false" data-index="1">
+                        <span class="park-card-icon">
+                            <img src="./assets/img/icon-apart-park.svg" alt="" loading="lazy"></span>
+                        <span class="park-nearby-info">
+                            <h4>Всего 30 квартир <br> в доме</h4>
+                            <p>Камерный формат вместо большого жилого комплекса</p>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="park-card-slot">
+                    <div class="park-card" role="tab" aria-selected="false" data-index="2">
+                        <span class="park-card-icon">
+                            <img src="./assets/img/icon-woll.svg" alt="" loading="lazy">
+                        </span>
+                        <span class="park-nearby-info">
+                        <h4>Кирпичный дом <br> с историей</h4>
+                        <p>Толстые стены — комфорт капитального здания</p>
+                    </span>
+                    </div>
+                </div>
+
+                <div class="park-card-slot">
+                    <div class="park-card" role="tab" aria-selected="false" data-index="3">
+                        <span class="park-card-icon">
+                            <img src="./assets/img/icon-house.svg" alt="" loading="lazy">
+                        </span>
+                        <span class="park-nearby-info">
+                        <h4>Дом после <br> комплексной реновации</h4>
+                        <p>Новый уровень комфорта в знакомой архитектуре Петербурга</p>
+                    </span>
+                    </div>
+                </div>
+
+                <div class="park-card-slot">
+                    <div class="park-card" role="tab" aria-selected="false" data-index="4">
+                        <span class="park-card-icon">
+                            <img src="./assets/img/icon-metro.svg" alt="" loading="lazy">
+                        </span>
+                        <span class="park-nearby-info">
+                        <h4>6 минут до метро <br> «Нарвская»</h4>
+                        <p>Всё необходимое рядом</p>
+                    </span>
+                    </div>
+                </div>
+
+                <div class="park-card-slot">
+                    <div class="park-card" role="tab" aria-selected="false" data-index="5">
+                        <span class="park-card-icon">
+                            <img src="./assets/img/icon-box-gift.svg" alt="" loading="lazy">
+                        </span>
+                        <span class="park-nearby-info">
+                        <h4>White Box в подарок</h4>
+                        <p>Готовая основа для вашего интерьера</p>
+                    </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="place-return-details" id="placeDetails">
+
+        <div class="park-detail is-active" data-index="0">
+            <div class="park-detail-photo">
+                <img src="./assets/img/photo-park-1.jpg" alt="" loading="lazy">
+            </div>
+            <div class="park-detail-text">
+                <p>Напротив дома расположен Екатерингофский парк — место для прогулок, отдыха и спокойных вечеров после
+                    насыщенного дня.</p>
+                <p>Редкое сочетание: историческая городская среда и большая зелёная зона рядом с домом.</p>
+            </div>
+        </div>
+
+        <div class="park-detail" data-index="1">
+            <div class="park-detail-photo"><img src="./assets/img/photo-park-2.jpg" alt="" loading="lazy"></div>
+            <div class="park-detail-text">
+                <p>Небольшое количество квартир создаёт особую атмосферу приватности и спокойствия.</p>
+                <p>Дом без ощущения массовой застройки — больше уюта, меньше соседей и комфортная среда для жизни.</p>
+            </div>
+        </div>
+
+        <div class="park-detail" data-index="2">
+            <div class="park-detail-photo"><img src="./assets/img/photo-park-3.jpg" alt="" loading="lazy"></div>
+            <div class="park-detail-text">
+                <p>Толстые кирпичные стены держат тепло зимой и прохладу летом — так строили на совесть.</p>
+                <p>История дома чувствуется в деталях фасада, сохранённых при реконструкции.</p>
+            </div>
+        </div>
+
+        <div class="park-detail" data-index="3">
+            <div class="park-detail-photo"><img src="./assets/img/photo-park-4.jpg" alt="" loading="lazy"></div>
+            <div class="park-detail-text">
+                <p>Инженерные системы, кровля и фасад обновлены полностью.</p>
+                <p>Привычная архитектура Петербурга получила новый уровень качества и комфорта.</p>
+            </div>
+        </div>
+
+        <div class="park-detail" data-index="4">
+            <div class="park-detail-photo"><img src="./assets/img/photo-park-5.jpg" alt="" loading="lazy"></div>
+            <div class="park-detail-text">
+                <p>Станция метро — в нескольких минутах пешком от дома.</p>
+                <p>Рядом остановки наземного транспорта и понятные маршруты до центра города.</p>
+            </div>
+        </div>
+
+        <div class="park-detail" data-index="5">
+            <div class="park-detail-photo"><img src="./assets/img/photo-park-6.jpg" alt="" loading="lazy"></div>
+            <div class="park-detail-text">
+                <p>Квартира передаётся с чистовой отделкой White Box: ровные стены, полы, разведённые коммуникации.</p>
+                <p>Экономия времени и бюджета на старте ремонта — можно сразу переходить к дизайн-проекту.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section class="premium-sec bg-white ">
+    <div class="container">
+        <div class="glob-title">
+            <h2><span class="d-block">премиальный камерный дом,</span> а не стандартный ЖК</h2>
+            <p>
+                Дом, где сохранилась атмосфера исторического Петербурга и появились современные стандарты комфорта.
+                Всего 30 квартир — камерный формат жизни рядом с Екатерингофским парком.
+            </p>
+        </div>
+    </div>
+    <div class="premium-main">
+        <div class="container">
+            <div class="premium-flex align-start justify-between">
+                <div class="premium-card">
+                    <span>30</span>
+                    <h4>Квартир</h4>
+                    <p>камерный формат дома</p>
+                </div>
+                <div class="premium-card">
+                    <span>70см</span>
+                    <h4>Толщина внешних стен</h4>
+                    <p>кирпичный дом</p>
+                </div>
+                <div class="premium-card">
+                    <span>6</span>
+                    <h4>Минут</h4>
+                    <p>до метро «Нарвская»</p>
+                </div>
+                <div class="premium-card">
+                    <span>1</span>
+                    <h4>шаг</h4>
+                    <p>до Екатерингофского парка</p>
+                </div>
+                <div class="premium-card">
+                    <span>4</span>
+                    <h4>Этажа</h4>
+                    <p>комфортная этажность</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="premium-photo justify-center">
+        <img src="./assets/img/premium.jpg" class="premium-desc" alt="premium" loading="lazy">
+        <img src="./assets/img/premium-mobile.jpg" class="premium-mobile" alt="premium" loading="lazy">
+    </div>
+</section>
+<section class="modern-home padding-top">
+    <div class="container">
+        <div class="glob-title">
+            <h2>Из прошлого — <span>в современный дом...</span></h2>
+            <p>
+                Дом сохранил архитектурный характер Петербурга и получил новый уровень комфорта благодаря комплексному
+                обновлению.
+            </p>
+        </div>
+    </div>
+    <div class="modern-bord">
+        <div class="modern-flex align-center">
+            <div class="modern compare-slider" id="compareSlider" tabindex="0" role="slider"
+                 aria-label="Сравнение изображений до и после"
+                 aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+
+                <img class="img-after" src="./assets/img/before-pic.png" alt="После" loading="lazy">
+                <img class="img-before" src="./assets/img/after-pic.png" alt="До" loading="lazy">
+
+                <div class="divider"></div>
+                <div class="handle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
+                        <path d="M50.8536 3.32858C51.0488 3.52384 51.0488 3.84042 50.8536 4.03568L47.6716 7.21766C47.4763 7.41293 47.1597 7.41293 46.9645 7.21766C46.7692 7.0224 46.7692 6.70582 46.9645 6.51056L49.7929 3.68213L46.9645 0.853702C46.7692 0.65844 46.7692 0.341857 46.9645 0.146595C47.1597 -0.0486672 47.4763 -0.0486672 47.6716 0.146595L50.8536 3.32858ZM0.146446 4.03568C-0.0488167 3.84042 -0.0488167 3.52384 0.146446 3.32858L3.32843 0.146595C3.52369 -0.0486672 3.84027 -0.0486672 4.03553 0.146595C4.2308 0.341857 4.2308 0.65844 4.03553 0.853702L1.20711 3.68213L4.03553 6.51056C4.2308 6.70582 4.2308 7.0224 4.03553 7.21766C3.84027 7.41293 3.52369 7.41293 3.32843 7.21766L0.146446 4.03568ZM50.5 3.68213V4.18213H0.5V3.68213V3.18213H50.5V3.68213Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="modern-info flex-column">
+                <h3>Что изменилось в доме?</h3>
+                <ul>
+                    <li>Усилены конструкции здания;</li>
+                    <li>Обновлён фасад;</li>
+                    <li>Модернизированы инженерные системы;</li>
+                    <li>Обновлены коммуникации;</li>
+                    <li>Выполнено обновление перекрытий;</li>
+                    <li>Создана новая дизайнерская парадная; </li>
+                    <li>Подготовлены современные квартиры.</li>
+                </ul>
+                <h3><span>Сохранили главное</span> — улучшили всё остальное</h3>
+                <p>Толстые кирпичные стены, архитектурный характер и атмосфера исторического дома остались частью
+                    проекта.
+                    При этом дом получил современные инженерные решения и новый уровень комфорта.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="see-house-main padding-top">
+    <div class="sm-container">
+        <div class="glob-title">
+            <h2>Увидеть дом, в котором <span class="d-block">хочется жить</span></h2>
+            <p>
+                Рассмотрите дом, будущие интерьеры квартир и окружение проекта — от архитектуры здания до деталей
+                будущего пространства.
+            </p>
+        </div>
+        <div class="see-house-cnt">
+            <div class="see-house-mobile">
+                <span>Дом после реновации</span>
+                <div class="house-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="31" viewBox="0 0 8 31" fill="none">
+                        <path d="M4.03519 30.3536C3.83993 30.5488 3.52335 30.5488 3.32809 30.3536L0.146107 27.1716C-0.0491555 26.9763 -0.0491555 26.6597 0.146107 26.4645C0.341369 26.2692 0.657951 26.2692 0.853214 26.4645L3.68164 29.2929L6.51007 26.4645C6.70533 26.2692 7.02191 26.2692 7.21717 26.4645C7.41244 26.6597 7.41244 26.9763 7.21717 27.1716L4.03519 30.3536ZM3.68164 0L4.18164 0L4.18164 30H3.68164H3.18164L3.18164 0L3.68164 0Z" fill="url(#paint0_linear_74_1288)"></path>
+                        <defs>
+                            <linearGradient id="paint0_linear_74_1288" x1="3.68164" y1="15" x2="4.68164" y2="15" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#D0C3AE"></stop>
+                                <stop offset="1" stop-color="#A17645"></stop>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="see-house-menu">
+                <ul>
+                    <li class="see-house see-house-active" data-target="renovation">Дом после реновации</li>
+                    <li class="see-house" data-target="apartments">Современные квартиры с отделкой</li>
+                    <li class="see-house" data-target="park">Жизнь рядом с парком</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="see-house-block">
+
+        <div class="see-house-js" data-content="renovation">
+            <div class="swiper house-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="see-house-photo d-flex">
+                            <img src="./assets/img/house-1.jpg" alt="house" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="see-house-photo d-flex">
+                            <img src="./assets/img/house-2.jpg" alt="house" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="see-house-photo d-flex">
+                            <img src="./assets/img/house-3.jpg" alt="house" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="see-house-photo d-flex">
+                            <img src="./assets/img/house-3.jpg" alt="house" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="house-slider-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
+                <div class="house-slider-next swiper-button-next"><i class="icon-arrow-right"></i></div>
+            </div>
+        </div>
+
+        <div class="see-house-js" data-content="apartments">
+            <div class="swiper house-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="see-house-photo d-flex">
+                            <img src="./assets/img/house-2.jpg" alt="house" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="see-house-photo d-flex">
+                            <img src="./assets/img/house-2.jpg" alt="house" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="see-house-photo d-flex">
+                            <img src="./assets/img/house-2.jpg" alt="house" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="see-house-photo d-flex">
+                            <img src="./assets/img/house-1.jpg" alt="house" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="house-slider-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
+                <div class="house-slider-next swiper-button-next"><i class="icon-arrow-right"></i></div>
+            </div>
+        </div>
+
+        <div class="see-house-js" data-content="park">
+            <div class="swiper house-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="see-house-photo d-flex">
+                            <img src="./assets/img/house-2.jpg" alt="house" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="see-house-photo d-flex">
+                            <img src="./assets/img/house-1.jpg" alt="house" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="see-house-photo d-flex">
+                            <img src="./assets/img/house-3.jpg" alt="house" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="see-house-photo d-flex">
+                            <img src="./assets/img/house-3.jpg" alt="house" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="house-slider-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
+                <div class="house-slider-next swiper-button-next"><i class="icon-arrow-right"></i></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section class="sales-main bg-white">
+    <div class="container">
+        <div class="sales-flex justify-between align-start">
+            <div class="sales-title">
+                <h2>Найдите квартиру, которая <span> подходит именно вам</span></h2>
+                <p>Актуальные предложения в доме на набережной Бумажного канала, 12Л.
+                    Все квартиры представлены с планировками, стоимостью и основными характеристиками.</p>
+            </div>
+
+            <div class="sales-progress" data-sold="18" data-total="30">
+                <svg class="sales-progress__ring" viewBox="0 0 120 120">
+                    <circle class="sales-progress__ring-bg" cx="60" cy="60" r="54"></circle>
+                    <circle class="sales-progress__ring-fill" cx="60" cy="60" r="54"></circle>
+                </svg>
+
+                <div class="sales-progress__content">
+                    <span class="sales-progress__sold">18</span>
+                    <span class="sales-progress__divider">/</span>
+                    <span class="sales-progress__total">30</span>
+                    <p>Квартир продано</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="sales-apart-flex d-flex">
+            <div class="sales-card">
+                <div class="count-floor d-center">
+                    <span>4</span> этаж
+                </div>
+                <div class="sales-apart-pic d-center">
+                    <img src="./assets/img/floor-1.png" alt="floor" loading="lazy">
+                </div>
+                <div class="sales-apart-name align-center">
+                    <span>Квартира №32</span>
+                    <p>(Студия • 19,5 м²)</p>
+                </div>
+                <div class="sales-apart-cnt d-flex">
+                    <div class="sales-name-left">
+                        <p>Подчистовая отделка</p>
+                    </div>
+                    <div class="sales-name-right">
+                        <span>от 6 900 000 ₽</span>
+                    </div>
+                </div>
+                <a href="#" class="href-arrow">смотреть Подробнее</a>
+            </div>
+            <div class="sales-card">
+                <div class="count-floor d-center">
+                    <span>4</span> этаж
+                </div>
+                <div class="sales-apart-pic d-center">
+                    <img src="./assets/img/floor-2.png" alt="floor" loading="lazy">
+                </div>
+                <div class="sales-apart-name align-center">
+                    <span>Квартира №32</span>
+                    <p>(Студия • 19,5 м²)</p>
+                </div>
+                <div class="sales-apart-cnt d-flex">
+                    <div class="sales-name-left">
+                        <p>Подчистовая отделка</p>
+                    </div>
+                    <div class="sales-name-right">
+                        <span>от 6 900 000 ₽</span>
+                    </div>
+                </div>
+                <a href="#" class="href-arrow">смотреть Подробнее</a>
+            </div>
+            <div class="sales-card">
+                <div class="count-floor d-center">
+                    <span>4</span> этаж
+                </div>
+                <div class="sales-apart-pic d-center">
+                    <img src="./assets/img/floor-3.png" alt="floor" loading="lazy">
+                </div>
+                <div class="sales-apart-name align-center">
+                    <span>Квартира №32</span>
+                    <p>(Студия • 19,5 м²)</p>
+                </div>
+                <div class="sales-apart-cnt d-flex">
+                    <div class="sales-name-left">
+                        <p>Подчистовая отделка</p>
+                    </div>
+                    <div class="sales-name-right">
+                        <span>от 6 900 000 ₽</span>
+                    </div>
+                </div>
+                <a href="#" class="href-arrow">смотреть Подробнее</a>
+            </div>
+        </div>
+        <a href="#" class="btn"><span>Смотреть все квартиры</span></a>
+    </div>
+</section>
+<section class="historic-sec padding-top">
+    <div class="container">
+        <div class="historic-title">
+            <h2>Современный дом <span>в историческом районе</span> Санкт-Петербурга</h2>
+            <p>Камерный жилой проект, где историческая архитектура сочетается с современными инженерными решениями,
+                комфортом и удобной городской инфраструктурой.</p>
+        </div>
+    </div>
+    <div class="historic-main">
+        <div class="container">
+            <div class="historic-flex justify-between">
+                <div class="historic-channel">
+                    <h3>Бумажный канал, <span>12Л</span></h3>
+                    <div class="historic-text flex-column">
+                        <p>
+                            Камерный жилой проект, расположенный в исторической части Адмиралтейского района
+                            Санкт-Петербурга, на набережной Бумажного канала.
+                        </p>
+                        <p>
+                            В 2026 году дом прошёл полную реновацию с бережным сохранением архитектурного облика и
+                            комплексным обновлением здания в соответствии с современными стандартами комфортного
+                            проживания.
+                        </p>
+                        <p>
+                            Проект находится всего в 6 минутах пешком от станции метро «Нарвская» и рядом с
+                            Екатерингофским парком — одним из крупнейших зелёных пространств района. В пешей доступности
+                            расположены кафе, магазины, деловые пространства, образовательные учреждения и вся
+                            необходимая городская инфраструктура.
+                        </p>
+                        <p>
+                            В доме представлены современные квартиры с продуманными планировками. Новые инженерные
+                            системы, современные коммуникации, дизайнерская отделка мест общего пользования и готовность
+                            объекта к проживанию создают комфортную среду в историческом здании Петербурга.
+                        </p>
+                    </div>
+                    <h3>Стоимость квартир начинается</h3>
+                    <div class="historic-price">
+                        <span>от 5 550 000 ₽.</span>
+                    </div>
+                </div>
+                <div class="historic-character">
+                    <h3>характеристики</h3>
+
+                    <div class="historic-col flex-wrap">
+                        <div class="historic-box">
+                            <img src="./assets/img/icons/icon-location.svg" alt="location" loading="lazy">
+                            <div class="historic-info">
+                                <p>Адрес:</p>
+                                <span>Бумажный канал, 12Л</span>
+                            </div>
+                        </div>
+                        <div class="historic-box">
+                            <img src="./assets/img/icons/icon-walls.svg" alt="walls" loading="lazy">
+                            <div class="historic-info">
+                                <p>Тип стен:</p>
+                                <span>Кирпич</span>
+                            </div>
+                        </div>
+                        <div class="historic-box">
+                            <img src="./assets/img/icons/icon-greening.svg" alt="walls" loading="lazy">
+                            <div class="historic-info">
+                                <p>Озеленение:</p>
+                                <span>Екатерингофский парк рядом с домом</span>
+                            </div>
+                        </div>
+                        <div class="historic-box">
+                            <img src="./assets/img/icons/ceiling-height.svg" alt="ceiling-height" loading="lazy">
+                            <div class="historic-info">
+                                <p>Высота потолков:</p>
+                                <span>до 2,7 м</span>
+                            </div>
+                        </div>
+                        <div class="historic-box">
+                            <img src="./assets/img/icons/wall-thickness.svg" alt="wall-thickness" loading="lazy">
+                            <div class="historic-info">
+                                <p>Толщина стен:</p>
+                                <span>70 см — отличная шумоизоляция</span>
+                            </div>
+                        </div>
+                        <div class="historic-box">
+                            <img src="./assets/img/icons/of-floors.svg" alt="of-floors" loading="lazy">
+                            <div class="historic-info">
+                                <p>Этажность:</p>
+                                <span>4 этажа</span>
+                            </div>
+                        </div>
+                        <div class="historic-box">
+                            <img src="./assets/img/icons/icon-driving.svg" alt="icon-driving" loading="lazy">
+                            <div class="historic-info">
+                                <p>Парковка:</p>
+                                <span>Во дворе дома</span>
+                            </div>
+                        </div>
+                        <div class="historic-box">
+                            <img src="./assets/img/icons/clipboard-tick.svg" alt="clipboard-tick" loading="lazy">
+                            <div class="historic-info">
+                                <p>Квартир на этаже:</p>
+                                <span>6-8 квартир</span>
+                            </div>
+                        </div>
+                        <div class="historic-box">
+                            <img src="./assets/img/icons/number-apart.svg" alt="apartment" loading="lazy">
+                            <div class="historic-info">
+                                <p>Количество квартир:</p>
+                                <span>30 квартир</span>
+                            </div>
+                        </div>
+                        <div class="historic-box">
+                            <img src="./assets/img/icons/icon-truby.svg" alt="truby" loading="lazy">
+                            <div class="historic-info">
+                                <p>Коммуникации:</p>
+                                <span>Новые инженерные сети</span>
+                            </div>
+                        </div>
+                        <div class="historic-box">
+                            <img src="./assets/img/icons/setting.svg" alt="setting" loading="lazy">
+                            <div class="historic-info">
+                                <p>Инженерные системы:</p>
+                                <span>Современные инженерные решения</span>
+                            </div>
+                        </div>
+                        <div class="historic-box">
+                            <img src="./assets/img/icons/common-areas.svg" alt="common-areas" loading="lazy">
+                            <div class="historic-info">
+                                <p>Места общего пользования:</p>
+                                <span>Дизайнерская отделка</span>
+                            </div>
+                        </div>
+                        `
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="living-park padding-top-bot">
+    <div class="container">
+        <div class="living-park-title align-center ">
+            <h2>Жизнь рядом с <span>Екатерингофским парком</span></h2>
+            <div class="living-park-text">
+                <p>
+                    Дом в исторической части Санкт-Петербурга: парк напротив, метро в нескольких минутах пешком, а центр
+                    города —
+                    в удобной транспортной доступности.
+                </p>
+            </div>
+        </div>
+
+        <div class="living-location align-start justify-between">
+            <div class="living-block">
+                <h3>преимущества локации <span>(ключевые расстояния)</span></h3>
+                <div class="living-wrap flex-wrap">
+                    <div class="living-card">
+                        <img src="./assets/img/free-park.svg" alt="free-park" loading="lazy">
+                        <h4>Екатерингофский парк</h4>
+                        <p>Напротив дома</p>
+                        <span class="card-line"></span>
+                        <p>Место для прогулок, отдыха и занятий спортом рядом с домом.</p>
+                    </div>
+                    <div class="living-card">
+                        <img src="./assets/img/icon-metro.svg" alt="metro" loading="lazy">
+                        <h4>Метро «Нарвская»</h4>
+                        <p>6 минут пешком</p>
+                        <span class="card-line"></span>
+                        <p>Быстрый доступ к центру и основным районам города.</p>
+                    </div>
+                    <div class="living-card">
+                        <img src="./assets/img/natural-park.svg" alt="natural-park" loading="lazy">
+                        <h4>Центр Санкт-Петербурга</h4>
+                        <p>10–15 минут на транспорте</p>
+                        <span class="card-line"></span>
+                        <p>Исторический центр, деловые и культурные пространства города рядом.</p>
+                    </div>
+                    <div class="living-card">
+                        <img src="./assets/img/admiralty.svg" alt="admiralty" loading="lazy">
+                        <h4>Адмиралтейский район</h4>
+                        <p>Историческая часть Петербурга</p>
+                        <span class="card-line"></span>
+                        <p>Развитая инфраструктура и сложившаяся городская среда.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="from-home">
+                <h3><span>дорога от вашего дома</span> до Бумажного канала, 12Л</h3>
+
+                <div class="section-route">
+
+                    <div class="map-outer" id="mapOuter-route">
+                        <div class="ymap" id="map-route"></div>
+                    </div>
+
+                </div>
+                <a href="#" class="href-arrow">Построить маршрут до дома</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="purchase-main padding-top-bot bg-white">
+    <div class="container">
+        <div class="conditions-title flex-column">
+            <h2>Удобные <span>условия покупки</span> квартиры</h2>
+            <p>Выберите подходящий способ приобретения квартиры: ипотека, рассрочка или консультация специалиста по
+                покупке.</p>
+        </div>
+        <div class="conditions-wrap flex-wrap">
+            <div class="conditions-box">
+                <div class="conditions-flex align-start justify-between">
+                    <div class="conditions-name">
+                        <h3>Ипотека</h3>
+                        <p>Приобретение квартиры с использованием ипотечных программ банков-партнёров.</p>
+                    </div>
+                    <span class="count-conditions">01</span>
+                </div>
+                <a href="#" class="btn"><span>Рассчитать ипотеку</span></a>
+            </div>
+            <div class="conditions-box">
+                <div class="conditions-flex align-start justify-between">
+                    <div class="conditions-name">
+                        <h3>Рассрочка</h3>
+                        <p>Индивидуальные условия оплаты для покупателей.</p>
+                    </div>
+                    <span class="count-conditions">02</span>
+                </div>
+                <a href="#" class="btn"><span>Узнать условия</span></a>
+            </div>
+            <div class="conditions-box">
+                <div class="conditions-flex align-start justify-between">
+                    <div class="conditions-name">
+                        <h3>Полная оплата</h3>
+                        <p>Быстрое оформление сделки при покупке квартиры за собственные средства с минимальными сроками
+                            подготовки документов.</p>
+                    </div>
+                    <span class="count-conditions">03</span>
+                </div>
+                <a href="#" class="btn"><span>Подобрать квартиру</span></a>
+            </div>
+        </div>
+        <div class="purchase-content padding-top">
+            <h2><span>Безопасная покупка</span> квартиры с полным сопровождением сделки</h2>
+            <div class="purchase-flex align-start justify-between">
+                <div class="purchase-text flex-column">
+                    <p>
+                        Все сделки проводятся с использованием сервисов безопасных расчётов ведущих банков, включая
+                        Сбербанк, ВТБ и другие банки-партнёры.
+                    </p>
+                    <p>
+                        Денежные средства перечисляются продавцу только после государственной регистрации права
+                        собственности, что обеспечивает максимальную защиту интересов покупателя и прозрачность всех
+                        этапов сделки.
+                    </p>
+                    <p>
+                        Мы полностью сопровождаем процесс покупки: помогаем с подготовкой документов, взаимодействием с
+                        банком, регистрацией сделки и передачей квартиры. Вам не потребуется дополнительно обращаться к
+                        агентам или посредникам — наши специалисты возьмут все организационные вопросы на себя.
+                    </p>
+                    <div class="purchase-key align-center">
+                        <img src="./assets/img/house-key.svg" alt="key" loading="lazy">
+                        <h4>Мы делаем процесс покупки квартиры <span>максимально простым, безопасным и понятным</span> —
+                            от первого обращения до получения ключей.</h4>
+                    </div>
+                </div>
+
+                <div class="purchase-adviсe">
+                    <ul>
+                        <li>Безопасные расчёты через ведущие банки России;</li>
+                        <li>Полное юридическое сопровождение сделки;</li>
+                        <li>Государственная регистрация права собственности;</li>
+                        <li>Прозрачное оформление документов;</li>
+                        <li>Контроль сделки на каждом этапе;</li>
+                        <li>Покупка без необходимости привлекать стороннего агента.</li>
+                    </ul>
+                </div>
+
+                <div class="purchase-key key-block-mob">
+                    <img src="./assets/img/house-key.svg" alt="key" loading="lazy">
+                    <h4>Мы делаем процесс покупки квартиры <span>максимально простым, безопасным и понятным</span> —
+                        от первого обращения до получения ключей.</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="mortgage-main padding-top">
+    <div class="container">
+        <div class="glob-title">
+            <h2>РАССЧИТАЙТЕ УДОБНЫЙ ПЛАТЕЖ <span>ПО ИПОТЕКЕ</span></h2>
+            <p>Укажите стоимость квартиры, первоначальный взнос и срок кредита — получите примерный расчёт
+                ежемесячного платежа.</p>
+        </div>
+        <div class="mortgage-calc">
+            <div class="card-left">
+                <div class="field-row align-start justify-between">
+                    <div class="field">
+                        <label class="field-label">Стоимость квартиры</label>
+                        <div class="field-box">
+                            <input type="text" id="priceInput" value="6 900 000 ₽">
+                            <input type="range" id="priceRange" min="1000000" max="30000000" step="100000"
+                                   value="6900000">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="field-label">Первоначальный взнос</label>
+                        <div class="field-box">
+                            <input type="text" id="downInput" value="1 000 000 ₽">
+                            <input type="range" id="downRange" min="0" max="27000000" step="50000" value="1000000">
+                        </div>
+                        <div class="field-hint">≈ 15% от стоимости квартиры</div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="field-label">Срок кредита</label>
+                    <div class="field-box">
+                        <input type="text" id="termInput" value="5 лет" readonly>
+                        <input type="range" id="termRange" min="1" max="30" step="1" value="5">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-right">
+                <div class="card-pirce">
+                    <p>Ежемесячный платёж</p>
+                    <span class="stat-value payment-value">88 583 ₽</span>
+                </div>
+                <div class="card-pirce">
+                    <p>Процентная ставка</p>
+                    <span class="stat-value rate-value">19,5%</span>
+                </div>
+                <div class="card-pirce">
+                    <p>Переплата по кредиту</p>
+                    <span class="stat-value overpayment-value">6 300 000 ₽</span>
+                </div>
+                <div class="card-pirce">
+                    <p>Налоговый вычет</p>
+                    <span class="stat-value deduction-value">532 242 ₽</span>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="mortgage-select align-start justify-between">
+            <h3>ПОМОЖЕМ ПОДОБРАТЬ <span>ИПОТЕЧНУЮ ПРОГРАММУ</span></h3>
+            <button class="btn"><span>ПОДАТЬ ЗАЯВКУ НА ИПОТЕКУ</span></button>
+        </div>
+    </div>
+</section>
+<section class="might-look padding-top">
+    <div class="container">
+        <div class="glob-title">
+            <h2>Как может выглядеть <span>ваша квартира</span></h2>
+            <p>Посмотрите примеры дизайн-проектов квартир в доме: планировки, варианты оформления и визуализацию
+                будущего пространства.</p>
+        </div>
+
+        <div class="might-look-cnt">
+            <div class="might-look-box d-flex">
+                <div class="apart-inter">
+                    <div class="count-floor d-center">
+                        <span>4</span> этаж
+                    </div>
+                    <div class="apart-inter-photo">
+                        <img class="lazy" src="./assets/img/floor-1.png" alt="image" loading="lazy">
+                    </div>
+                    <div class="apart-inter-name">
+                        <div class="apart-number align-center">
+                            <h4>Квартира №32</h4>
+                            <p>(Студия • 19,5 м²)</p>
+                        </div>
+                        <a href="https://kuula.co/share/collection/7vjTk?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1"
+                           target="_blank" class="btn"><span><img src="./assets/img/icons/cube-repo.svg" alt="" loading="lazy"> 3D-ТУР</span></a>
+                    </div>
+                </div>
+
+                <div class="might-look-apart">
+                    <div class="swiper might-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide ">
+                                <a href="./assets/img/might-1.png" class="might-photo" data-fancybox="apartment">
+                                    <img class="lazy" src="./assets/img/might-1.png" alt="image" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="swiper-slide ">
+                                <a href="./assets/img/might-2.png" class="might-photo" data-fancybox="apartment">
+                                    <img class="lazy" src="./assets/img/might-2.png" alt="image" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="swiper-slide ">
+                                <a href="./assets/img/might-3.png" class="might-photo" data-fancybox="apartment">
+                                    <img class="lazy" src="./assets/img/might-3.png" alt="image" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="swiper-slide ">
+                                <a href="./assets/img/might-2.png" class="might-photo" data-fancybox="apartment">
+                                    <img class="lazy" src="./assets/img/might-2.png" alt="image" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="swiper-slide ">
+                                <a href="./assets/img/might-3.png" class="might-photo" data-fancybox="apartment">
+                                    <img class="lazy" src="./assets/img/might-3.png" alt="image" loading="lazy">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="might-button-prev swiper-button-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="8" viewBox="0 0 31 8" fill="none">
+                            <path d="M0.146446 4.03568C-0.0488148 3.84042 -0.0488148 3.52384 0.146446 3.32858L3.32843 0.146595C3.52369 -0.0486672 3.84027 -0.0486672 4.03553 0.146595C4.2308 0.341857 4.2308 0.65844 4.03553 0.853702L1.20711 3.68213L4.03553 6.51056C4.2308 6.70582 4.2308 7.0224 4.03553 7.21766C3.84027 7.41293 3.52369 7.41293 3.32843 7.21766L0.146446 4.03568ZM30.5 3.68213V4.18213H0.5V3.68213V3.18213H30.5V3.68213Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="might-button-next swiper-button-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="8" viewBox="0 0 31 8" fill="none">
+                            <path d="M30.3536 4.03568C30.5488 3.84042 30.5488 3.52384 30.3536 3.32858L27.1716 0.146595C26.9763 -0.0486672 26.6597 -0.0486672 26.4645 0.146595C26.2692 0.341857 26.2692 0.65844 26.4645 0.853702L29.2929 3.68213L26.4645 6.51056C26.2692 6.70582 26.2692 7.0224 26.4645 7.21766C26.6597 7.41293 26.9763 7.41293 27.1716 7.21766L30.3536 4.03568ZM0 3.68213V4.18213H30V3.68213V3.18213H0V3.68213Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="might-look-box d-flex">
+                <div class="apart-inter">
+                    <div class="count-floor d-center">
+                        <span>4</span> этаж
+                    </div>
+                    <div class="apart-inter-photo">
+                        <img class="lazy" src="./assets/img/floor-1.png" alt="image" loading="lazy">
+                    </div>
+                    <div class="apart-inter-name">
+                        <div class="apart-number align-center">
+                            <h4>Квартира №32</h4>
+                            <p>(Студия • 19,5 м²)</p>
+                        </div>
+                        <a href="https://kuula.co/share/collection/7vjTk?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1"
+                           target="_blank" class="btn"><span><img src="./assets/img/icons/cube-repo.svg" alt="" loading="lazy"> 3D-ТУР</span></a>
+                    </div>
+                </div>
+
+                <div class="might-look-apart">
+                    <div class="swiper might-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide ">
+                                <a href="./assets/img/might-1.png" class="might-photo" data-fancybox="apartment-two">
+                                    <img class="lazy" src="./assets/img/might-1.png" alt="image" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="swiper-slide ">
+                                <a href="./assets/img/might-2.png" class="might-photo" data-fancybox="apartment-two">
+                                    <img class="lazy" src="./assets/img/might-2.png" alt="image" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="swiper-slide ">
+                                <a href="./assets/img/might-3.png" class="might-photo" data-fancybox="apartment-two">
+                                    <img class="lazy" src="./assets/img/might-3.png" alt="image" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="swiper-slide ">
+                                <a href="./assets/img/might-2.png" class="might-photo" data-fancybox="apartment-two">
+                                    <img class="lazy" src="./assets/img/might-2.png" alt="image" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="swiper-slide ">
+                                <a href="./assets/img/might-3.png" class="might-photo" data-fancybox="apartment-two">
+                                    <img class="lazy" src="./assets/img/might-3.png" alt="image" loading="lazy">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="might-button-prev swiper-button-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="8" viewBox="0 0 31 8" fill="none">
+                            <path d="M0.146446 4.03568C-0.0488148 3.84042 -0.0488148 3.52384 0.146446 3.32858L3.32843 0.146595C3.52369 -0.0486672 3.84027 -0.0486672 4.03553 0.146595C4.2308 0.341857 4.2308 0.65844 4.03553 0.853702L1.20711 3.68213L4.03553 6.51056C4.2308 6.70582 4.2308 7.0224 4.03553 7.21766C3.84027 7.41293 3.52369 7.41293 3.32843 7.21766L0.146446 4.03568ZM30.5 3.68213V4.18213H0.5V3.68213V3.18213H30.5V3.68213Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="might-button-next swiper-button-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="8" viewBox="0 0 31 8" fill="none">
+                            <path d="M30.3536 4.03568C30.5488 3.84042 30.5488 3.52384 30.3536 3.32858L27.1716 0.146595C26.9763 -0.0486672 26.6597 -0.0486672 26.4645 0.146595C26.2692 0.341857 26.2692 0.65844 26.4645 0.853702L29.2929 3.68213L26.4645 6.51056C26.2692 6.70582 26.2692 7.0224 26.4645 7.21766C26.6597 7.41293 26.9763 7.41293 27.1716 7.21766L30.3536 4.03568ZM0 3.68213V4.18213H30V3.68213V3.18213H0V3.68213Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="might-look-box d-flex">
+                <div class="apart-inter">
+                    <div class="count-floor d-center">
+                        <span>4</span> этаж
+                    </div>
+                    <div class="apart-inter-photo">
+                        <img class="lazy" src="./assets/img/floor-1.png" alt="image" loading="lazy">
+                    </div>
+                    <div class="apart-inter-name">
+                        <div class="apart-number align-center">
+                            <h4>Квартира №32</h4>
+                            <p>(Студия • 19,5 м²)</p>
+                        </div>
+                        <a href="https://kuula.co/share/collection/7vjTk?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1"
+                           target="_blank" class="btn"><span><img src="./assets/img/icons/cube-repo.svg" alt="" loading="lazy"> 3D-ТУР</span></a>
+                    </div>
+                </div>
+
+                <div class="might-look-apart">
+                    <div class="swiper might-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide ">
+                                <a href="./assets/img/might-1.png" class="might-photo" data-fancybox="apartment-three">
+                                    <img class="lazy" src="./assets/img/might-1.png" alt="image" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="swiper-slide ">
+                                <a href="./assets/img/might-2.png" class="might-photo" data-fancybox="apartment-three">
+                                    <img class="lazy" src="./assets/img/might-2.png" alt="image" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="swiper-slide ">
+                                <a href="./assets/img/might-3.png" class="might-photo" data-fancybox="apartment-three">
+                                    <img class="lazy" src="./assets/img/might-3.png" alt="image" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="swiper-slide ">
+                                <a href="./assets/img/might-2.png" class="might-photo" data-fancybox="apartment-three">
+                                    <img class="lazy" src="./assets/img/might-2.png" alt="image" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="swiper-slide ">
+                                <a href="./assets/img/might-3.png" class="might-photo" data-fancybox="apartment-three">
+                                    <img class="lazy" src="./assets/img/might-3.png" alt="image" loading="lazy">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="might-button-prev swiper-button-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="8" viewBox="0 0 31 8" fill="none">
+                            <path d="M0.146446 4.03568C-0.0488148 3.84042 -0.0488148 3.52384 0.146446 3.32858L3.32843 0.146595C3.52369 -0.0486672 3.84027 -0.0486672 4.03553 0.146595C4.2308 0.341857 4.2308 0.65844 4.03553 0.853702L1.20711 3.68213L4.03553 6.51056C4.2308 6.70582 4.2308 7.0224 4.03553 7.21766C3.84027 7.41293 3.52369 7.41293 3.32843 7.21766L0.146446 4.03568ZM30.5 3.68213V4.18213H0.5V3.68213V3.18213H30.5V3.68213Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="might-button-next swiper-button-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="8" viewBox="0 0 31 8" fill="none">
+                            <path d="M30.3536 4.03568C30.5488 3.84042 30.5488 3.52384 30.3536 3.32858L27.1716 0.146595C26.9763 -0.0486672 26.6597 -0.0486672 26.4645 0.146595C26.2692 0.341857 26.2692 0.65844 26.4645 0.853702L29.2929 3.68213L26.4645 6.51056C26.2692 6.70582 26.2692 7.0224 26.4645 7.21766C26.6597 7.41293 26.9763 7.41293 27.1716 7.21766L30.3536 4.03568ZM0 3.68213V4.18213H30V3.68213V3.18213H0V3.68213Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="see-more">смотреть больше квартир</a>
+    </div>
+</section>
+<section class="accordion-main padding-top-bot">
+    <div class="container">
+        <div class="glob-title">
+            <h2>Ответы на вопросы о доме и квартирах</h2>
+            <p>Собрали основные вопросы о проекте, реновации дома и покупке квартиры.</p>
+        </div>
+
+        <div class="faq-accordion">
+
+            <div class="faq-item active">
+                <div class="faq-header">
+                    <h4>1. Это новый дом или новостройка?</h4>
+                    <div class="faq-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="31" viewBox="0 0 8 31" fill="none">
+                            <path d="M4.03519 30.3536C3.83993 30.5488 3.52335 30.5488 3.32809 30.3536L0.146107 27.1716C-0.0491555 26.9763 -0.0491555 26.6597 0.146107 26.4645C0.341369 26.2692 0.657951 26.2692 0.853214 26.4645L3.68164 29.2929L6.51007 26.4645C6.70533 26.2692 7.02191 26.2692 7.21717 26.4645C7.41244 26.6597 7.41244 26.9763 7.21717 27.1716L4.03519 30.3536ZM3.68164 0L4.18164 0L4.18164 30H3.68164H3.18164L3.18164 0L3.68164 0Z" fill="url(#paint0_linear_74_1288)"></path>
+                            <defs>
+                                <linearGradient id="paint0_linear_74_1288" x1="3.68164" y1="15" x2="4.68164" y2="15" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#D0C3AE"></stop>
+                                    <stop offset="1" stop-color="#A17645"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="faq-body">
+                    <div class="faq-body-inner">
+                        <p>Это обновлённый дом после комплексной реновации, а не новая стройка с нуля.</p>
+                        <p>В проекте сохранены преимущества капитального кирпичного здания: внешние стены толщиной до 70 см, высокий уровень звукоизоляции и основательность дома. При этом здание было усилено, фасад полностью обновлён, обновлены инженерные системы и коммуникации, выполнено обновление перекрытий, а внутренние пространства адаптированы под современные стандарты комфортного проживания.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h4>2. Что означает реновация дома?</h4>
+                    <div class="faq-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="31" viewBox="0 0 8 31" fill="none">
+                            <path d="M4.03519 30.3536C3.83993 30.5488 3.52335 30.5488 3.32809 30.3536L0.146107 27.1716C-0.0491555 26.9763 -0.0491555 26.6597 0.146107 26.4645C0.341369 26.2692 0.657951 26.2692 0.853214 26.4645L3.68164 29.2929L6.51007 26.4645C6.70533 26.2692 7.02191 26.2692 7.21717 26.4645C7.41244 26.6597 7.41244 26.9763 7.21717 27.1716L4.03519 30.3536ZM3.68164 0L4.18164 0L4.18164 30H3.68164H3.18164L3.18164 0L3.68164 0Z" fill="url(#paint0_linear_74_1288)"/>
+                            <defs>
+                                <linearGradient id="paint0_linear_74_1288" x1="3.68164" y1="15" x2="4.68164" y2="15" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#D0C3AE"/>
+                                    <stop offset="1" stop-color="#A17645"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="faq-body">
+                    <div class="faq-body-inner">
+                        <p>Текст ответа на второй вопрос.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h4>3. Какая отделка предусмотрена в квартирах?</h4>
+                    <div class="faq-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="31" viewBox="0 0 8 31" fill="none">
+                            <path d="M4.03519 30.3536C3.83993 30.5488 3.52335 30.5488 3.32809 30.3536L0.146107 27.1716C-0.0491555 26.9763 -0.0491555 26.6597 0.146107 26.4645C0.341369 26.2692 0.657951 26.2692 0.853214 26.4645L3.68164 29.2929L6.51007 26.4645C6.70533 26.2692 7.02191 26.2692 7.21717 26.4645C7.41244 26.6597 7.41244 26.9763 7.21717 27.1716L4.03519 30.3536ZM3.68164 0L4.18164 0L4.18164 30H3.68164H3.18164L3.18164 0L3.68164 0Z" fill="url(#paint0_linear_74_1288)"/>
+                            <defs>
+                                <linearGradient id="paint0_linear_74_1288" x1="3.68164" y1="15" x2="4.68164" y2="15" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#D0C3AE"/>
+                                    <stop offset="1" stop-color="#A17645"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="faq-body">
+                    <div class="faq-body-inner">
+                        <p>Текст ответа на третий вопрос.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h4>4. Какие преимущества расположения дома?</h4>
+                    <div class="faq-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="31" viewBox="0 0 8 31" fill="none">
+                            <path d="M4.03519 30.3536C3.83993 30.5488 3.52335 30.5488 3.32809 30.3536L0.146107 27.1716C-0.0491555 26.9763 -0.0491555 26.6597 0.146107 26.4645C0.341369 26.2692 0.657951 26.2692 0.853214 26.4645L3.68164 29.2929L6.51007 26.4645C6.70533 26.2692 7.02191 26.2692 7.21717 26.4645C7.41244 26.6597 7.41244 26.9763 7.21717 27.1716L4.03519 30.3536ZM3.68164 0L4.18164 0L4.18164 30H3.68164H3.18164L3.18164 0L3.68164 0Z" fill="url(#paint0_linear_74_1288)"/>
+                            <defs>
+                                <linearGradient id="paint0_linear_74_1288" x1="3.68164" y1="15" x2="4.68164" y2="15" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#D0C3AE"/>
+                                    <stop offset="1" stop-color="#A17645"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="faq-body">
+                    <div class="faq-body-inner">
+                        <p>Текст ответа на четвёртый вопрос.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h4>5. Можно ли посмотреть квартиру перед покупкой?</h4>
+                    <div class="faq-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="31" viewBox="0 0 8 31" fill="none">
+                            <path d="M4.03519 30.3536C3.83993 30.5488 3.52335 30.5488 3.32809 30.3536L0.146107 27.1716C-0.0491555 26.9763 -0.0491555 26.6597 0.146107 26.4645C0.341369 26.2692 0.657951 26.2692 0.853214 26.4645L3.68164 29.2929L6.51007 26.4645C6.70533 26.2692 7.02191 26.2692 7.21717 26.4645C7.41244 26.6597 7.41244 26.9763 7.21717 27.1716L4.03519 30.3536ZM3.68164 0L4.18164 0L4.18164 30H3.68164H3.18164L3.18164 0L3.68164 0Z" fill="url(#paint0_linear_74_1288)"/>
+                            <defs>
+                                <linearGradient id="paint0_linear_74_1288" x1="3.68164" y1="15" x2="4.68164" y2="15" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#D0C3AE"/>
+                                    <stop offset="1" stop-color="#A17645"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="faq-body">
+                    <div class="faq-body-inner">
+                        <p>Текст ответа на пятый вопрос.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+<section class="complex-main padding-top-bot bg-white">
+    <div class="container">
+        <div class="glob-title">
+            <h2>Комплексный подход к реновации зданий</h2>
+            <p>
+                Мы обновляем дома Санкт-Петербурга, сохраняя архитектурный характер зданий и создавая современные жилые пространства.
+            </p>
+            <h3>Основные направления работы:</h3>
+
+        </div>
+
+    </div>
+    <div class="complex-projects">
+        <div class="container">
+            <div class="premium-flex align-start justify-between">
+                <div class="premium-card">
+                    <span>01</span>
+                    <h4>Новые инженерные системы</h4>
+                </div>
+                <div class="premium-card">
+                    <span>02</span>
+                    <h4>Обновление коммуникаций</h4>
+                </div>
+                <div class="premium-card">
+                    <span>03</span>
+                    <h4>Современные планировки квартир</h4>
+                </div>
+                <div class="premium-card">
+                    <span>04</span>
+                    <h4>Качественные материалы и отделка</h4>
+                </div>
+                <div class="premium-card">
+                    <span>05</span>
+                    <h4>Комфортная городская среда</h4>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="our-completed">
+        <div class="container">
+            <h3>Наши реализованные проекты</h3>
+            <div class="projects-cnt">
+                <div class="swiper projects-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="projects-card">
+                                <div class="projects-col">
+                                    <img src="./assets/img/projects-1.jpg" alt="projects" loading="lazy">
+                                    <div class="projects-name">
+                                        <h4>Шкапина, 22</h4>
+                                        <p>Дом после реновации в историческом районе Санкт-Петербурга. Проект комплексного обновления здания
+                                            с сохранением архитектурного характера и созданием современных квартир с новым уровнем комфорта.</p>
+                                    </div>
+                                    <div class="projects-info">
+                                        <ul>
+                                            <li>Кирпичный дом;</li>
+                                            <li>Новые инженерные системы;</li>
+                                            <li>Современный лифт;</li>
+                                            <li>Обновлённые коммуникации;</li>
+                                            <li>Современные квартиры.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="#" class="href-arrow">Подробнее о проекте</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="projects-card">
+                                <div class="projects-col">
+                                    <img src="./assets/img/projects-2.jpg" alt="projects" loading="lazy">
+                                    <div class="projects-name">
+                                        <h4>Шкапина, 24</h4>
+                                        <p>Современное жилое пространство в исторической части города. Реновация здания с обновлением внутренних
+                                            систем и созданием комфортной среды для проживания.</p>
+                                    </div>
+                                    <div class="projects-info">
+                                        <ul>
+                                            <li>Историческое здание;</li>
+                                            <li>Новая инженерия;</li>
+                                            <li>Современные коммуникации;</li>
+                                            <li>Качественная отделка;</li>
+                                            <li>Городская инфраструктура рядом.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="#" class="href-arrow">Подробнее о проекте</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="projects-card">
+                                <div class="projects-col">
+                                    <img src="./assets/img/projects-3.jpg" alt="projects" loading="lazy">
+                                    <div class="projects-name">
+                                        <h4>Шкапина, 24Б</h4>
+                                        <p>Дом с современным уровнем комфорта. Проект обновления здания с сохранением характера дома
+                                            и внедрением современных решений для жителей.</p>
+                                    </div>
+                                    <div class="projects-info">
+                                        <ul>
+                                            <li>Кирпичный дом;</li>
+                                            <li>Новые инженерные системы;</li>
+                                            <li>Современный лифт;</li>
+                                            <li>Обновлённые помещения;</li>
+                                            <li>Современный жилой формат.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="href-arrow">Подробнее о проекте</a>
+
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="projects-card">
+                                <div class="projects-col">
+                                    <img src="./assets/img/projects-4.jpg" alt="projects" loading="lazy">
+                                    <div class="projects-name">
+                                        <h4>Калинина, 10</h4>
+                                        <p>Современные квартиры в исторической среде Петербурга. Проект реновации здания с обновлением
+                                            инженерии и созданием комфортных жилых пространств.</p>
+                                    </div>
+                                    <div class="projects-info">
+                                        <ul>
+                                            <li>Исторический район;</li>
+                                            <li>Новые коммуникации;</li>
+                                            <li>Современные решения;</li>
+                                            <li>Продуманные квартиры.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="href-arrow">Подробнее о проекте</a>
+
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="projects-card">
+                                <div class="projects-col">
+                                    <img src="./assets/img/projects-5.jpg" alt="projects" loading="lazy">
+                                    <div class="projects-name">
+                                        <h4>Рижский проспект</h4>
+                                        <p>Дом после комплексного обновления. Проект, в котором архитектура Петербурга сочетается
+                                            с современными стандартами проживания.</p>
+                                    </div>
+                                    <div class="projects-info">
+                                        <ul>
+                                            <li>Историческая локация;</li>
+                                            <li>Новая инженерия;</li>
+                                            <li>Современный жилой формат;</li>
+                                            <li>Качественные материалы.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="href-arrow">Подробнее о проекте</a>
+
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="projects-card">
+                                <div class="projects-col">
+                                    <img src="./assets/img/projects-6.jpg" alt="projects" loading="lazy">
+                                    <div class="projects-name">
+                                        <h4>Швецова, 4</h4>
+                                        <p>Современный жилой дом после комплексной реновации. Проект комплексного обновления исторического
+                                            здания с сохранением архитектурного характера и созданием современных квартир для комфортного
+                                            проживания. Дом получил новый внешний облик, обновлённые инженерные системы и современные
+                                            общественные пространства.</p>
+                                    </div>
+                                    <div class="projects-info">
+                                        <ul>
+                                            <li>Кирпичный дом;</li>
+                                            <li>5 этажей;</li>
+                                            <li>Комплексная реновация здания;</li>
+                                            <li>Новый фасад;</li>
+                                            <li>Новые инженерные системы;</li>
+                                            <li>Новые коммуникации;</li>
+                                            <li>Дизайнерская отделка мест общего пользования;</li>
+                                            <li>Современные квартиры с продуманными планировками.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="#" class="href-arrow">Подробнее о проекте</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<section class="map-main">
+    <div class="map-outer" id="mapOuter-main">
+        <div class="ymap" id="map-main"></div>
+        <div class="my-controls">
+            <div class="zoom-group">
+                <div class="zoom-btn" id="zoomIn-main">+</div>
+                <div class="zoom-btn" id="zoomOut-main">–</div>
+            </div>
+            <div class="round-btn" id="geoBtn-main" title="Вернуться к центру">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 L19 20 L12 16.5 L5 20 Z"/></svg>
+            </div>
+            <div class="round-btn dim" id="tiltBtn-main" title="3D">3D</div>
+        </div>
+        <div class="coord-readout" id="coordReadout-main"></div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-main align-center">
+            <a href="#" class="logo">
+                <span>ЖК</span> Бумажный
+            </a>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#">О доме</a></li>
+                    <li><a href="#">Реновация</a></li>
+                    <li><a href="#">Галерея</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-btn align-center">
+                <div class="header-href align-center">
+                    <a href="#" target="_blank" class="href-soc">
+                        <img src="./assets/img/icons/icon-max.svg" alt="max" loading="lazy">
+                    </a>
+                    <a href="#" target="_blank" class="href-soc">
+                        <img src="./assets/img/icons/icon-telegram.svg" alt="telegram" loading="lazy">
+                    </a>
+                </div>
+                <div class="header-phone flex-column">
+                    <a href="tel:+7 (960) 283-33-88" class="phone-number">+7 (960) 283-33-88</a>
+                    <small>С 10.00-20.00 без выходных</small>
+                </div>
+                <button class="btn"><span>выбрать квартиру</span></button>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-line">
+        <div class="container">
+            <div class="footer-policy align-center justify-between">
+                <p>2026 © — Бумажный 12Л  I <a href="#">Политика конфиденциальности</a></p>
+                <p>Информация, размещённая на сайте, не является публичной офертой</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+<div class="modal-overlay" id="viewing-form" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" data-modal-close aria-label="Закрыть">
+
+        </button>
+
+        <h3>Запись на просмотр</h3>
+
+        <form id="viewing-form-el">
+            <div class="modal-field">
+                <label>Ваше имя <span class="req">*</span></label>
+                <input type="text" name="name" placeholder="Введите ваше имя" required>
+            </div>
+
+            <div class="modal-field">
+                <label>Телефон <span class="req">*</span></label>
+                <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+            </div>
+
+            <div class="modal-field">
+                <label>Удобное время для звонка</label>
+                <div class="select-wrap">
+                    <select name="time">
+                        <option>В ближайшее время</option>
+                        <option>Утро (10:00–13:00)</option>
+                        <option>День (13:00–17:00)</option>
+                        <option>Вечер (17:00–20:00)</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="modal-submit btn"><span>Записаться на просмотр</span></button>
+
+            <label class="modal-agree">
+                <label for="agree">Я ознакомлен(а) с <a href="#">политикой</a> и даю согласие на обработку персональных данных</label>
+                <input type="checkbox" id="agree">
+                <span class="checkmark"></span>
+            </label>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=d130909a-f4b5-453d-85f2-98a45f38ba0c&lang=ru_RU"></script>
+
+<script src="./assets/js/script.js"></script>
+<script src="./assets/js/map.js"></script>
+
+</body>
+</html>

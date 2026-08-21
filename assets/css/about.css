@@ -1,0 +1,400 @@
+.banner-about .banner-thumbs {
+    height: 530px;
+}
+
+
+
+
+.creating-new{
+    border-top: 1px solid var(--white-opacity);
+    border-bottom: 1px solid var(--white-opacity);
+}
+.creating-title{
+    padding-top: 150px;
+    max-width: 1170px;
+    width: 100%;
+}
+.creating-title h2 span{
+    display: block;
+}
+.creating-title p{
+    margin-top: 25px;
+    max-width: 1020px;
+    width: 100%;
+}
+.creating-info{
+    gap: 30px;
+    border-left: 1px solid var(--white-opacity);
+    max-width: 600px;
+    width: 100%;
+    padding: 130px 0 150px 75px;
+}
+.creating-icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid var(--white-opacity);
+}
+.creating-icon svg{
+    width: 30px;
+    height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.about-approach .conditions-name h3{
+    color: var(--white);
+}
+
+
+.about-approach .conditions-box {
+    border: 1px solid var(--white-opacity);
+}
+
+
+
+
+.experience-main .glob-title{
+    max-width: 900px;
+    width: 100%;
+}
+.experience-main .glob-title p + p{
+    margin-top: 15px;
+}
+.experience-main .premium-card h4{
+    font-size: 30px;
+    text-transform: uppercase;
+
+}
+
+
+
+
+
+
+
+.begins-respect-title{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 1360px;
+    width: 100%;
+}
+.begins-respect-title p{
+    max-width: 1020px;
+    width: 100%;
+}
+.begins-respect-photo{
+    margin-top: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1599px){
+    .banner-about .banner-thumbs {
+        height: 420px;
+    }
+    .banner-about .banner-info {
+        max-width: 400px;
+    }
+    .banner-about .swiper-slide img {
+        height: 64px;
+    }
+    .creating-info {
+        max-width: 408px;
+        padding: 100px 0 130px 41px;
+    }
+    .creating-title {
+        padding-top: 120px;
+        max-width: 900px;
+    }
+    .experience-main .premium-card h4 {
+        font-size: 22px;
+    }
+    .begins-respect-title {
+        max-width: 950px;
+    }
+
+}
+@media (max-width: 1399px){
+    .creating-info {
+        padding: 100px 0 130px 41px;
+        gap: 20px;
+    }
+    .creating-title p {
+        margin-top: 15px;
+    }
+    .begins-respect-photo {
+        margin-top: 100px;
+    }
+}
+@media (max-width: 1199px){
+    .creating-icon {
+        width: 50px;
+        height: 50px;
+    }
+    .creating-icon svg {
+        width: 22px;
+        height: 18px;
+    }
+}
+@media (max-width: 1020px){
+    .creating-flex{
+        flex-direction: column;
+    }
+    .creating-icon{
+        margin-bottom: 5px;
+    }
+    .creating-title {
+        padding-top: 80px;
+    }
+    .creating-info {
+        margin-top: 30px;
+        padding: 30px 0 60px 0;
+        gap: 15px;
+        border-left: unset;
+        border-top: 1px solid var(--white-opacity);
+        max-width: 100%;
+    }
+    .creating-info p{
+        max-width: 500px;
+        width: 100%;
+    }
+
+
+    .experience-main .premium-flex {
+        position: relative;
+        width: 100%;
+        padding-left: 0;
+        margin-top: 0;
+        gap: 25px;
+        flex-direction: column;
+    }
+    .experience-main .container {
+        padding: 0 15px;
+    }
+    .experience-main .premium-flex:before {
+        top: 0;
+        left: 8px;
+        width: 1px;
+        height: 96%;
+    }
+    .experience-main .premium-card {
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0 0 0 34px;
+    }
+    .premium-card:before {
+        width: 16px;
+        height: 16px;
+        top: 3px;
+    }
+    .begins-respect-photo {
+        margin-top: 60px;
+    }
+    .begins-respect-title {
+        gap: 15px;
+    }
+
+
+}
+@media (max-width: 767px){
+    .begins-respect-photo {
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.stock-main{
+    padding: 65px 0 150px;
+}
+.bread-cups ul{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.bread-cups ul li + li:before{
+    content: "•";
+    position: absolute;
+    left: -12px;
+    font-size: 18px;
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.bread-cups ul li{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--white);
+    position: relative;
+}
+.bread-cups ul li a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #8D8D8D;
+}
+.stock-main h1{
+    margin-top: 30px;
+}
+.stock-flex{
+    margin-top: 30px;
+}
+.stock-card{
+    border: 1px solid var(--white-opacity);
+    width: 33.333333%;
+}
+.stock-card + .stock-card{
+    margin-left: -1px;
+}
+.stock-card img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+.stock-info{
+    padding: 40px 30px 50px;
+}
+.stock-info h4{
+    font-size: 26px;
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.stock-info p{
+    margin-top: 15px;
+    max-width: 400px;
+    width: 100%;
+    min-height: 55px;
+}
+.stock-info .btn{
+    margin-top: 25px;
+}
+.go-back-home{
+    display: none;
+}
+
+
+
+
+@media (max-width: 1199px){
+    .stock-info {
+        padding: 30px 20px 30px;
+    }
+    .stock-info h4 {
+        font-size: 22px;
+    }
+    .stock-card img {
+        height: 240px;
+    }
+    .stock-info p {
+        margin-top: 10px;
+        min-height: 68px;
+    }
+}
+
+
+
+@media (max-width: 1020px){
+    .stock-flex{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .stock-card {
+        width: 50%;
+    }
+    .stock-main {
+        padding: 55px 0 100px;
+    }
+}
+@media (max-width: 767px){
+
+    .stock-card {
+        width: 100%;
+        max-width: 500px;
+    }
+    .stock-main {
+        padding: 20px 0 60px;
+    }
+    .stock-info .btn {
+        margin-top: 20px;
+    }
+    .stock-info p {
+        margin-top: 10px;
+        min-height: auto;
+    }
+
+}
+@media (max-width: 575px){
+    .stock-main .bread-cups{
+        display: none;
+    }
+    .go-back-home{
+        display: flex;
+        align-items: center;
+        color: var(--white);
+        gap: 10px;
+    }
+    .stock-info {
+        padding: 25px 15px 25px;
+    }
+    .stock-flex {
+        margin-top: 19px;
+    }
+
+    .stock-info .btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,271 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 1000;
+    background: rgba(52, 57, 74, 0.9);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s ease, visibility 0s linear .35s;
+}
+
+.modal-overlay.is-open {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .35s ease, visibility 0s linear 0s;
+}
+
+.modal-box {
+    background: #fff;
+    width: 100%;
+    max-width: 720px;
+    padding: 80px 60px;
+    position: relative;
+    transform: translateY(24px) scale(.96);
+    opacity: 0;
+    transition: transform .4s cubic-bezier(.22, 1, .36, 1), opacity .35s ease;
+}
+
+.modal-overlay.is-open .modal-box {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+.modal-box h3{
+    color: var(--text-dark);
+    margin-bottom: 25px;
+}
+.modal-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background .2s ease, transform .2s ease;
+    transform: rotate(45deg);
+}
+
+
+.modal-close:before{
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, #D0C3AE 0%, #A17645 100%);
+
+}
+.modal-close:after{
+    content: "";
+    background: linear-gradient(180deg, #D0C3AE 0%, #A17645 100%);
+    width: 100%;
+    height: 1px;
+    position: absolute;
+}
+
+.modal-field {
+    margin-bottom: 20px;
+}
+
+.modal-field label {
+    display: block;
+    font-size: 18px;
+    color: #8C8C8C;
+    margin-bottom: 10px;
+}
+
+.modal-field label .req {
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.modal-field input,
+.modal-field select {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    padding: 12px 20px;
+    font-size: 18px;
+    color: var(---color-text);
+    background: #fff;
+    outline: none;
+    transition: border-color .2s ease;
+    appearance: none;
+    height: 60px;
+}
+
+.modal-field input::placeholder {
+    color: #8C8C8C;
+}
+
+.modal-field input:focus,
+.modal-field select:focus {
+    border-color: #A17645;
+}
+
+.select-wrap {
+    position: relative;
+}
+
+.select-wrap::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    width: 8px;
+    height: 33px;
+    background-image: url(../img/icons/arrow-top.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.modal-submit {
+    width: 100%;
+}
+
+.modal-overlay .modal-submit {
+    margin-top: 37px;
+}
+
+
+.modal-agree{
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 30px;
+}
+.modal-agree label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #8C8C8C;
+}
+
+.modal-agree a {
+    color: #8C8C8C;
+    text-decoration: underline;
+}
+
+
+/* уважаем reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .modal-overlay, .modal-box, .modal-close {
+        transition: none !important;
+    }
+}
+
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid rgba(229, 229, 229, 1);
+    transition: 0.3s;
+}
+.modal-agree input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+}
+
+.modal-agree input:checked ~ .checkmark {
+    border: 1px solid rgba(208, 195, 174, 1);
+}
+
+.modal-agree .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 3px;
+    top: 4px;
+    width: 12px;
+    height: 10px;
+    background-image: url(../img/icons/icon-check.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.modal-agree input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1199px) {
+    .modal-box {
+        max-width: 570px;
+        padding: 60px 40px;
+    }
+    .modal-box h3 {
+        font-size: 28px;
+    }
+    .modal-close {
+        top: 20px;
+        right: 20px;
+        width: 24px;
+        height: 24px;
+    }
+    .modal-overlay {
+        padding: 0;
+    }
+}
+@media (max-width: 575px) {
+    .modal-box {
+        max-width: 470px;
+        padding: 50px 15px;
+    }
+    .modal-field input, .modal-field select {
+        padding: 9px 20px;
+        font-size: 16px;
+        height: 50px;
+    }
+    .modal-field label {
+        font-size: 16px;
+        margin-bottom: 7px;
+    }
+    .modal-overlay .modal-submit {
+        margin-top: 20px;
+    }
+    .modal-agree {
+        margin-top: 20px;
+    }
+    .select-wrap::after {
+        top: 16px;
+        right: 19px;
+        width: 6px;
+        height: 22px;
+        background-size: cover;
+    }
+
+}

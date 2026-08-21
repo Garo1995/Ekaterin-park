@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Tenor Sans';
+    src: url('TenorSans.eot');
+    src: local('Tenor Sans'), local('TenorSans'),
+    url('TenorSans.eot?#iefix') format('embedded-opentype'),
+    url('TenorSans.woff2') format('woff2'),
+    url('TenorSans.woff') format('woff'),
+    url('TenorSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Regular.eot');
+    src: local('Raleway'), local('Raleway-Regular'),
+    url('Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+    url('Raleway-Regular.woff2') format('woff2'),
+    url('Raleway-Regular.woff') format('woff'),
+    url('Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
