@@ -3825,8 +3825,8 @@ footer{
         width: 100%;
     }
     .fab-wrap {
-        right: 10px;
-        bottom: 10px;
+        right: 15px;
+        bottom: 15px;
         gap: 5px;
     }
     .fab-main {
@@ -3851,6 +3851,25 @@ footer{
     .sales-name-left, .sales-name-right {
         padding: 13px 14px;
     }
+
+    .cookie__text {
+        gap: 10px;
+        flex-direction: column;
+    }
+    .cookie-fon {
+        padding: 24px 15px;
+        position: relative;
+    }
+    .slide-caption-mob p {
+        line-height: 115%;
+    }
+    .cookie__text p {
+        font-size: 14px;
+    }
+    .cookie h4 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 370px){
@@ -3866,4 +3885,5 @@ footer{
     .sales-name-left {
         padding: 10px 10px;
     }
+
 }
