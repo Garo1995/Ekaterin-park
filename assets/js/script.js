@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const slider = document.getElementById('compareSlider');
 
     if (slider) {
-        // блок есть на странице — инициализируем слайдер
+
         const before = slider.querySelector('.img-before');
         const divider = slider.querySelector('.divider');
         const handle = slider.querySelector('.handle');
@@ -367,8 +367,7 @@ document.addEventListener('DOMContentLoaded', function () {
         setPosition(50);
 
     } else {
-        // блока нет на странице — ничего не делаем
-        console.log('compareSlider: блок не найден на этой странице, скрипт пропущен');
+
     }
 });
 
@@ -901,8 +900,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
     } else {
-        // блоков нет на странице — ничего не делаем
-        console.log('see-house-menu: блок не найден на этой странице, скрипт пропущен');
+
     }
 });
 
@@ -970,6 +968,12 @@ const sliderImages = new Swiper('.catalog-slider', {
         prevEl: ".catalog-btn-prev",
     },
     breakpoints: {
+        1200: {
+            slidesPerView: 1,
+            loop: true,
+            spaceBetween: 1,
+
+        },
         1199: {
             slidesPerView: 2.15,
             loop: true,
@@ -993,3 +997,172 @@ const sliderImages = new Swiper('.catalog-slider', {
         },
     },
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const cookieBlock = document.querySelector(".cookie");
+
+    if (!cookieBlock) return;
+
+    const acceptBtn = document.querySelector(".cookie__btn");
+
+    if (!localStorage.getItem("cookieAccepted")) {
+        cookieBlock.style.display = "flex";
+    } else {
+        cookieBlock.style.display = "none";
+    }
+
+    acceptBtn.addEventListener("click", () => {
+        localStorage.setItem("cookieAccepted", "true");
+        cookieBlock.style.display = "none";
+    });
+
+
+});
+
+const wrap = document.getElementById('fabWrap');
+const main = document.getElementById('fabMain');
+
+if (wrap && main) {
+    main.addEventListener('click', () => {
+        wrap.classList.toggle('open');
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Faq page
+
+(function () {
+    // Проверяем, есть ли нужная разметка на странице
+    var menu = document.querySelector('.faq-menu');
+    var content = document.querySelector('.faq-cnt');
+
+    if (!menu || !content) {
+        return; // если блоков нет — скрипт ничего не делает
+    }
+
+    var menuItems = menu.querySelectorAll('.faq-click');
+    var contentBoxes = content.querySelectorAll('.faq-cnt-box');
+
+    menuItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+            var target = item.getAttribute('data-faq');
+
+            // Снимаем активность со всех пунктов меню
+            menuItems.forEach(function (el) {
+                el.classList.remove('active');
+            });
+            // Активируем нажатый пункт
+            item.classList.add('active');
+
+            // Скрываем все блоки контента
+            contentBoxes.forEach(function (box) {
+                box.classList.remove('active');
+            });
+            // Показываем нужный блок
+            var activeBox = content.querySelector('.faq-cnt-box[data-faq="' + target + '"]');
+            if (activeBox) {
+                activeBox.classList.add('active');
+            }
+        });
+    });
+})();
+
+
+
+// Faq page
+
+
+
+function initStyledSelects() {
+    const wrappers = document.querySelectorAll('.styled-select');
+
+    if (wrappers.length === 0) return;
+
+    wrappers.forEach(wrapper => {
+        if (wrapper.dataset.initialized) return;
+        wrapper.dataset.initialized = 'true';
+
+        const select = wrapper.querySelector('select');
+        if (!select) return;
+
+        const optionsData = Array.from(select.options).map(o => ({
+            value: o.value,
+            label: o.textContent
+        }));
+
+        // создаём видимый блок
+        const box = document.createElement('div');
+        box.className = 'select-box';
+        box.innerHTML = `<span class="select-label">${optionsData[0].label}</span><div class="arrow"></div>`;
+
+        const list = document.createElement('div');
+        list.className = 'options-list';
+        optionsData.forEach((opt, i) => {
+            if (i === 0 && opt.value === '') return; // пропускаем пустой placeholder
+            const item = document.createElement('div');
+            item.className = 'option-item';
+            item.textContent = opt.label;
+            item.dataset.value = opt.value;
+            list.appendChild(item);
+        });
+
+        wrapper.appendChild(box);
+        wrapper.appendChild(list);
+
+        const label = box.querySelector('.select-label');
+
+        box.addEventListener('click', (e) => {
+            e.stopPropagation();
+            document.querySelectorAll('.styled-select.open').forEach(w => {
+                if (w !== wrapper) w.classList.remove('open');
+            });
+            wrapper.classList.toggle('open');
+        });
+
+        list.querySelectorAll('.option-item').forEach(item => {
+            item.addEventListener('click', () => {
+                list.querySelectorAll('.option-item').forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+                label.textContent = item.textContent;
+                select.value = item.dataset.value;
+                select.dispatchEvent(new Event('change', { bubbles: true }));
+                wrapper.classList.remove('open');
+            });
+        });
+    });
+
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.styled-select.open').forEach(w => w.classList.remove('open'));
+    });
+}
+
+initStyledSelects();

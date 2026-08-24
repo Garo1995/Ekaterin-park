@@ -328,7 +328,106 @@
 
 
 
+.error-page{
+    border-bottom: 1px solid #FFFFFF26;
+}
+.error-flex{
+    gap: 40px;
+}
+.error-info{
+    max-width: 800px;
+    width: 100%;
+}
+.error-info strong{
+    font-family: "Tenor Sans";
+    font-weight: 400;
+    font-size: 200px;
+    line-height: 90%;
+    text-transform: uppercase;
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: block;
+    margin-top: 50px;
+}
+.error-info h3{
+    margin-top: 15px;
+    font-size: 30px;
+    max-width: 720px;
+    width: 100%;
+}
+.error-info p{
+    margin-top: 20px;
+    max-width: 540px;
+    width: 100%;
+}
+.error-btn{
+    margin-top: 35px;
+    gap: 30px;
+}
 
+.error-btn .btn-line{
+    padding: 22px 20px;
+    color: var(--white);
+}
+
+.error-btn .btn{
+    padding: 22px 20px;
+}
+
+
+
+
+
+.faq-cnt-box {
+    display: none;
+}
+.faq-cnt-box.active {
+    display: block;
+}
+
+
+
+@media (max-width: 1599px){
+    .error-info strong {
+        font-size: 160px;
+        margin-top: 26px;
+    }
+    .error-info h3 {
+        margin-top: 13px;
+        font-size: 26px;
+        max-width: 600px;
+    }
+    .error-info p {
+        margin-top: 15px;
+        max-width: 472px;
+    }
+    .error-btn {
+        margin-top: 25px;
+        gap: 15px;
+    }
+    .error-btn .btn-line {
+        padding: 16px 20px;
+    }
+    .error-btn .btn {
+        padding: 16px 20px;
+    }
+}
+
+@media (max-width: 1399px){
+    .error-flex {
+        gap: 50px;
+        flex-direction: column;
+    }
+    .error-info {
+        max-width: 1300px;
+        padding-top: 20px;
+    }
+
+
+}
 @media (max-width: 1199px){
     .stock-info {
         padding: 30px 20px 30px;
@@ -343,6 +442,23 @@
         margin-top: 10px;
         min-height: 68px;
     }
+
+    .error-btn {
+        gap: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .error-btn .btn{
+        max-width: 420px;
+        width: 100%;
+        padding: 17px 20px;
+    }
+    .error-btn .btn-line {
+        max-width: 420px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
 }
 
 
@@ -358,6 +474,7 @@
     .stock-main {
         padding: 55px 0 100px;
     }
+
 }
 @media (max-width: 767px){
 
@@ -378,7 +495,7 @@
 
 }
 @media (max-width: 575px){
-    .stock-main .bread-cups{
+    .bread-cups{
         display: none;
     }
     .go-back-home{
@@ -396,5 +513,18 @@
 
     .stock-info .btn {
         width: 100%;
+    }
+    .error-page .container{
+        padding: 0;
+    }
+    .error-info{
+        padding: 20px 15px 0;
+    }
+    .error-info strong {
+        font-size: 100px;
+        margin-top: 22px;
+    }
+    .error-info h3 {
+        font-size: 22px;
     }
 }

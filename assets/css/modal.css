@@ -90,8 +90,7 @@
     color: transparent;
 }
 
-.modal-field input,
-.modal-field select {
+.modal-field input{
     width: 100%;
     border: 1px solid var(--border);
     border-radius: 100px;
@@ -109,16 +108,33 @@
     color: #8C8C8C;
 }
 
-.modal-field input:focus,
-.modal-field select:focus {
+.modal-field input:focus{
     border-color: #A17645;
 }
 
-.select-wrap {
+.styled-select{
     position: relative;
+    width: 100%;
+    cursor: pointer;
 }
+.styled-select .select-box{
+    width: 100%;
+    position: relative;
+    border-radius: 100px;
+    padding: 12px 20px;
+    font-size: 18px;
+    color: var(---color-text);
+    background: #fff;
+    outline: none;
+    transition: border-color .2s ease;
+    appearance: none;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border);
 
-.select-wrap::after {
+}
+.styled-select .select-box::after {
     content: "";
     position: absolute;
     top: 17px;
@@ -129,6 +145,50 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+.styled-select .select-box:focus {
+    border-color: #A17645;
+}
+.styled-select select {
+    display: none;
+}
+
+.styled-select .options-list {
+    position: absolute;
+    top: 101%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #c9a876;
+    border-radius: 20px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height .2s ease, opacity .2s ease;
+    z-index: 10;
+}
+
+.styled-select.open .options-list {
+    max-height: 280px;
+    opacity: 1;
+    overflow-y: auto;
+}
+
+
+.styled-select .option-item {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: var(--text-dark);
+    cursor: pointer;
+}
+
+.styled-select .option-item:hover {
+    background: #D0C3AE;
+
+    color: #ffffff;
+}
+
+
+
 
 .modal-submit {
     width: 100%;
@@ -260,12 +320,20 @@
     .modal-agree {
         margin-top: 20px;
     }
-    .select-wrap::after {
-        top: 16px;
+    .styled-select .select-box {
+        padding: 12px 20px;
+        font-size: 16px;
+        height: 50px;
+    }
+    .styled-select .select-box::after {
+        top: 12px;
         right: 19px;
-        width: 6px;
-        height: 22px;
+        width: 7px;
+        height: 27px;
         background-size: cover;
     }
-
+    .styled-select .option-item {
+        padding: 11px 20px;
+        font-size: 15px;
+    }
 }

@@ -21,7 +21,8 @@ h1, h2, h3, h4 {
 h1 span,
 h2 span,
 h3 span,
-h4 span{
+h4 span,
+.count-tabs span{
     background: var(--gold-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -85,30 +86,10 @@ ul, li{
     justify-content: center;
     width: max-content;
     gap: 10px;
-    background: #A17645;
-
-}
-.btn span{
-    position: relative;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.btn:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 100px;
     background: var(--gold-gradient);
-    transition: 0.3s;
 }
-.btn:hover:before{
-    opacity: 0;
-}
+
+
 .btn:hover,
 .btn:active {
     background: #A17645;
@@ -252,6 +233,7 @@ ul, li{
     position: relative;
     background: unset;
     text-align: left;
+    white-space: nowrap;
 }
 .href-arrow:after{
     content: "";
@@ -260,9 +242,12 @@ ul, li{
     background-image: url("../img/icons/rigth-arrow-line.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    transition: 0.3s;
 }
 
-
+.href-arrow:hover:after{
+    transform: translateX(10px);
+}
 
 .banner-progress {
     position: absolute;
@@ -1651,7 +1636,11 @@ ul, li{
     width: 100%;
     padding: 18px 36px;
 }
-
+.apart-inter-name .btn span{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 .might-look-apart{
     width: 100%;
     position: relative;
@@ -1818,13 +1807,14 @@ ul, li{
     height: 300px;
     object-fit: cover;
 }
-.projects-card .href-arrow{
-    border-top: 1px solid rgba(229, 229, 229, 1);
+.projects-cnt .href-arrow{
+    border: 1px solid rgba(229, 229, 229, 1);
     color: rgba(32, 32, 32, 1);
     padding: 30px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
 .projects-name{
     padding: 25px 30px 30px;
@@ -2164,11 +2154,139 @@ footer{
 
 
 
+.cookie {
+    margin: 0;
+
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 15px;
+    z-index: 111;
+}
+.cookie-fon{
+    background-color: #fff;
+    padding: 30px;
+    position: relative;
+}
+.close-cookie{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.cookie h4{
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #3D3D3D;
+}
+.cookie .btn {
+    padding: 12px 20px;
+}
+
+
+.cookie__text{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+}
+.cookie__text p{
+    font-size: 16px;
+    color: #3D3D3D;
+}
+.cookie__text p a{
+    color: #3D3D3D;
+    text-decoration: underline;
+}
 
 
 
 
 
+
+
+.fab-wrap{
+    position:fixed;
+    right:20px;
+    bottom:30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    z-index: 90;
+}
+
+/* дополнительные кнопки */
+.fab-item{
+    width:50px;
+    height:50px;
+    background: linear-gradient(180deg, #D0C3AE 0%, #A17645 100%);
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    border:none;
+    opacity:0;
+    pointer-events:none;
+    transition: 0.28s;
+}
+
+.fab-wrap.open .fab-item{
+    opacity:1;
+    transform:translateY(0) scale(1);
+    pointer-events:auto;
+}
+
+/* лёгкая последовательная задержка при открытии */
+.fab-wrap.open .fab-item:nth-child(1){ transition-delay:0.06s; }
+.fab-wrap.open .fab-item:nth-child(2){ transition-delay:0s; }
+
+/* при закрытии — обратный порядок, без задержек чтобы закрывалось быстро и слитно */
+.fab-wrap:not(.open) .fab-item{
+    transition-delay:0s;
+}
+
+.fab-item svg{ width:20px; height:20px; }
+
+/* главная кнопка */
+.fab-main{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background: linear-gradient(180deg, #D0C3AE 0%, #A17645 100%);
+
+    border:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    position:relative;
+}
+
+.fab-item img{
+    width: 26px;
+    height:26px;
+    transition: 0.3s;
+    filter: brightness(0) invert(1);
+}
+
+.icon-close{
+    opacity:0;
+    transform:rotate(-90deg) scale(0.6);
+}
+
+.fab-wrap.open .icon-plus{
+    opacity:0;
+    transform:rotate(90deg) scale(0.6);
+}
+.fab-wrap.open .icon-close{
+    opacity:1;
+    transform:rotate(0deg) scale(1);
+}
+
+.fab-main .icon{
+    position: absolute;
+}
 
 
 
@@ -3700,6 +3818,30 @@ footer{
     .sales-progress {
         max-width: 300px;
         width: 100%;
+    }
+    .fab-wrap {
+        right: 10px;
+        bottom: 10px;
+        gap: 5px;
+    }
+    .fab-main {
+        width: 40px;
+        height: 40px;
+    }
+    .fab-item img {
+        width: 20px;
+        height: 20px;
+    }
+    .fab-item {
+        width: 40px;
+        height: 40px;
+    }
+    .fab-main .icon {
+        width: 20px;
+    }
+    .projects-cnt .href-arrow {
+        padding: 20px 8px;
+        margin-top: 25px;
     }
 }
 
