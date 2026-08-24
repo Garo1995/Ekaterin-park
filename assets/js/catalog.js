@@ -106,12 +106,16 @@
             var status = 'free';
             if (cell.classList.contains('reserved')) status = 'reserved';
             else if (cell.classList.contains('sold')) status = 'sold';
+            var numEl = ps[0] ? ps[0].querySelector('strong') : null;
+            var titleNum = numEl ? numEl.textContent.trim() : (num ? '№' + num : '');
+            var titleDesc = numEl ? line1.replace(numEl.textContent, '').trim() : '';
 
             function setText(field, value) {
                 var el = panel.querySelector('[data-field="' + field + '"]');
                 if (el) el.textContent = value;
             }
-            setText('title', 'Квартира ' + line1);
+            setText('title', 'Квартира ' + titleNum);
+            setText('titledesc', titleDesc);
             setText('price', price);
             setText('area', area);
             setText('num', num);
@@ -134,8 +138,9 @@
             var tip = tile.querySelector('.tip');
             var ps = tip ? tip.querySelectorAll('p') : [];
             var line1 = ps[0] ? ps[0].textContent.trim() : '';
-            var price = ps[1] ? ps[1].textContent.trim() : '';
-            var statusLabel = ps[2] ? ps[2].textContent.trim() : '';
+            var priceEl = tip ? tip.querySelector('strong') : null;
+            var price = priceEl ? priceEl.textContent.trim() : (ps[1] ? ps[1].textContent.trim() : '');
+            var statusLabel = priceEl ? (ps[1] ? ps[1].textContent.trim() : '') : (ps[2] ? ps[2].textContent.trim() : '');
             var finishEl = tile.querySelector('.finish');
             var finish = finishEl ? finishEl.textContent.trim() : '';
             var floorEl = tile.querySelector('.floor');
@@ -147,12 +152,16 @@
             var status = 'free';
             if (tile.classList.contains('reserved')) status = 'reserved';
             else if (tile.classList.contains('sold')) status = 'sold';
+            var numEl = ps[0] ? ps[0].querySelector('span') : null;
+            var titleNum = numEl ? numEl.textContent.trim() : (num ? '№' + num : '');
+            var titleDesc = numEl ? line1.replace(numEl.textContent, '').trim() : '';
 
             function setText(field, value) {
                 var el = panel.querySelector('[data-field="' + field + '"]');
                 if (el) el.textContent = value;
             }
-            setText('title', 'Квартира ' + line1);
+            setText('title', 'Квартира ' + titleNum);
+            setText('titledesc', titleDesc);
             setText('price', price);
             setText('area', area);
             setText('num', num);
@@ -188,6 +197,7 @@
                 if (el) el.textContent = value;
             }
             setText('title', num ? 'Квартира №' + num : '');
+            setText('titledesc', '');
             setText('price', price);
             setText('area', '');
             setText('num', num);
@@ -206,12 +216,107 @@
             }
         }
 
+        function fillPanelFromRow(panel, row) {
+            var tds = row.querySelectorAll('td');
+            var room = tds[0] ? tds[0].textContent.trim() : '';
+            var area = tds[1] ? tds[1].textContent.trim() : '';
+            var entrance = tds[2] ? tds[2].textContent.trim() : '';
+            var price = tds[3] ? tds[3].textContent.trim() : '';
+            var statusCell = tds[4] ? tds[4].querySelector('.status') : null;
+            var statusLabel = statusCell ? statusCell.textContent.trim() : '';
+            var status = 'free';
+            if (statusCell) {
+                if (statusCell.classList.contains('reserved')) status = 'reserved';
+                else if (statusCell.classList.contains('sold')) status = 'sold';
+            }
+            var floor = tds[6] ? tds[6].textContent.trim() : '';
+            var num = tds[7] ? tds[7].textContent.trim() : '';
+            var descParts = [];
+            if (room) descParts.push(room);
+            if (area) descParts.push(area + ' м²');
+            var title = num ? 'Квартира №' + num : '';
+            var titleDesc = descParts.length ? '(' + descParts.join(' · ') + ')' : '';
+
+            function setText(field, value) {
+                var el = panel.querySelector('[data-field="' + field + '"]');
+                if (el) el.textContent = value || '';
+            }
+            setText('title', title);
+            setText('titledesc', titleDesc);
+            setText('price', price);
+            setText('area', area ? area + ' м²' : '');
+            setText('num', num);
+            setText('entrance', entrance);
+            setText('floor', floor);
+            setText('finish', '');
+            var statusEl = panel.querySelector('[data-field="status"]');
+            if (statusEl) {
+                statusEl.textContent = statusLabel;
+                statusEl.className = 'status ' + status;
+            }
+            var planEl = panel.querySelector('[data-field="plan"]');
+            if (planEl) {
+                planEl.setAttribute('src', './assets/img/atc-1.png');
+                planEl.setAttribute('alt', title);
+            }
+        }
+
+        function fillPanelFromZone(panel, zone) {
+            var raw = zone.getAttribute('data-apt');
+            var data = {};
+            try { data = JSON.parse(raw); } catch (err) { data = {}; }
+            var floorBlock = zone.closest('[data-floor]');
+            var floor = floorBlock ? floorBlock.getAttribute('data-floor') : '';
+            var statusLabel = data.status || '';
+            var status = 'free';
+            if (/резерв|брониров/i.test(statusLabel)) status = 'reserved';
+            else if (/продан/i.test(statusLabel)) status = 'sold';
+            var title = data.num ? 'Квартира №' + data.num : '';
+            var titleDesc = data.pl ? '(' + data.pl + ')' : '';
+
+            function setText(field, value) {
+                var el = panel.querySelector('[data-field="' + field + '"]');
+                if (el) el.textContent = value || '';
+            }
+            setText('title', title);
+            setText('titledesc', titleDesc);
+            setText('price', data.price);
+            setText('area', data.pl);
+            setText('num', data.num);
+            setText('entrance', data.paradnaya);
+            setText('floor', floor);
+            setText('finish', data.message);
+            var statusEl = panel.querySelector('[data-field="status"]');
+            if (statusEl) {
+                statusEl.textContent = statusLabel;
+                statusEl.className = 'status ' + status;
+            }
+            var planEl = panel.querySelector('[data-field="plan"]');
+            if (planEl) {
+                planEl.setAttribute('src', data.img || '');
+                planEl.setAttribute('alt', title);
+            }
+        }
+
         root.addEventListener('click', function (e) {
             var closeBtn = within(e.target.closest('.close'));
             if (closeBtn) {
                 var p = closeBtn.closest('.panel');
                 if (p) p.classList.remove('active');
                 setActiveFloorTrigger(null);
+                return;
+            }
+            var loupe = within(e.target.closest('.plan-loupe'));
+            if (loupe) {
+                var panelInfo = loupe.closest('.panel-info');
+                var planImg = panelInfo ? panelInfo.querySelector('.plan img') : null;
+                var modalName = loupe.getAttribute('data-modal-open');
+                var modal = modalName ? document.getElementById(modalName) : null;
+                var modalImg = modal ? modal.querySelector('img') : null;
+                if (planImg && modalImg) {
+                    modalImg.setAttribute('src', planImg.getAttribute('src'));
+                    modalImg.setAttribute('alt', planImg.getAttribute('alt') || '');
+                }
                 return;
             }
             var navBtn = within(e.target.closest('.navfloor'));
@@ -269,7 +374,31 @@
                 setActiveFloorTrigger(null);
                 return;
             }
-            var trigger = within(e.target.closest('.zone,tbody tr'));
+            var rowTrigger = within(e.target.closest('tbody tr'));
+            if (rowTrigger) {
+                var rowMode = rowTrigger.closest('.mode');
+                var rowPanel = rowMode ? rowMode.querySelector('.panel') : null;
+                if (rowPanel) fillPanelFromRow(rowPanel, rowTrigger);
+                root.querySelectorAll('.panel.active').forEach(function (p) {
+                    if (p !== rowPanel) p.classList.remove('active');
+                });
+                if (rowPanel) rowPanel.classList.add('active');
+                setActiveFloorTrigger(null);
+                return;
+            }
+            var zoneTrigger = within(e.target.closest('.open-panel'));
+            if (zoneTrigger) {
+                var floorSection = zoneTrigger.closest('[data-view="floor"]');
+                var zonePanel = floorSection ? floorSection.querySelector('.panel') : null;
+                if (zonePanel) fillPanelFromZone(zonePanel, zoneTrigger);
+                root.querySelectorAll('.panel.active').forEach(function (p) {
+                    if (p !== zonePanel) p.classList.remove('active');
+                });
+                if (zonePanel) zonePanel.classList.add('active');
+                setActiveFloorTrigger(null);
+                return;
+            }
+            var trigger = within(e.target.closest('.zone'));
             if (trigger) {
                 var panel = trigger.querySelector('.panel');
                 root.querySelectorAll('.panel.active').forEach(function (p) {
@@ -298,3 +427,11 @@
         start();
     }
 })();
+
+
+
+
+
+
+
+

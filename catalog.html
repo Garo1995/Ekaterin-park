@@ -75,19 +75,19 @@
     <nav class="tabs">
         <button class="tab active" type="button" data-view="facade">
             <img src="./assets/img/icons/facade.svg" alt="">
-            Фасад
+            <span>Фасад</span>
         </button>
         <button class="tab" type="button" data-view="layouts">
             <img src="./assets/img/icons/layouts.svg" alt="">
-            Планировки
+            <span>Планировки</span>
         </button>
         <button class="tab" type="button" data-view="chess">
             <img src="./assets/img/icons/checkerboard.svg" alt="">
-            Шахматка
+            <span>Шахматка</span>
         </button>
         <button class="tab" type="button" data-view="floor">
             <img src="./assets/img/icons/nav-floor.svg" alt="">
-            Этаж
+            <span>Этаж</span>
         </button>
     </nav>
     <section class="view active" data-view="facade">
@@ -95,7 +95,7 @@
             <div class="building-slid__photo d-flex position-relative">
                 <img src="./assets/img/floor.jpg" alt="Фасад ЖК «Бумажный»">
                 <div class="building-slid-svg ">
-                    <svg width="1920" height="1400" viewBox="0 0 1920 1400" fill="none"
+                    <svg class="svg-floor-desc" width="1920" height="1400" viewBox="0 0 1920 1400" fill="none"
                          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                          preserveAspectRatio="none">
                         <mask id="mask0_193_1205" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
@@ -122,6 +122,7 @@
                         </g>
 
                     </svg>
+
                     <aside class="panel" data-floor="4">
                         <div class="panel-info">
                             <div class="panelhead ">
@@ -130,36 +131,14 @@
                                     <p>Набережная Бумажного канала 12б</p>
                                 </div>
                                 <div class="floornav align-center">
-                                    <span class="floor-cunt"> <span>4</span>/4 этаж </span>
-                                    <div class="close">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
-                                             viewBox="0 0 26 26" fill="none">
-                                            <rect x="0.00195312" y="24.7488" width="35" height="1"
-                                                  transform="rotate(-45 0.00195312 24.7488)"
-                                                  fill="url(#paint0_linear_206_7372)"/>
-                                            <rect width="35" height="1"
-                                                  transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 25.457 24.7488)"
-                                                  fill="url(#paint1_linear_206_7372)"/>
-                                            <defs>
-                                                <linearGradient id="paint0_linear_206_7372" x1="17.502" y1="24.7488"
-                                                                x2="17.502" y2="25.7488" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#D0C3AE"/>
-                                                    <stop offset="1" stop-color="#A17645"/>
-                                                </linearGradient>
-                                                <linearGradient id="paint1_linear_206_7372" x1="17.5" y1="0" x2="17.5"
-                                                                y2="1" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#D0C3AE"/>
-                                                    <stop offset="1" stop-color="#A17645"/>
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
-                                    </div>
+                                    <span class="floor-cunt"> <span>4</span>/4 <sub>этаж</sub> </span>
+                                    <div class="close"><i class="icon-close-panel"></i></div>
                                 </div>
                             </div>
-                            <div class="plan "><img src="./assets/img/atc-1.png" alt="План 1 этажа"></div>
+                            <div class="plan"><img src="./assets/img/atc-1.png" alt="План 1 этажа"></div>
                             <div class="planlink ">
                                 <a href="#" class="href-arrow">Открыть план этажа</a>
-                                <div class="plan-loupe"><img src="./assets/img/icons/loupe-search.svg" alt=""></div>
+                                <div class="btn-open-modal plan-loupe" data-modal-open="viewing-floor"><img src="./assets/img/icons/loupe-search.svg" alt=""></div>
                             </div>
                         </div>
                         <span class="name-modal-floor">Квартиры <span>на этаже</span></span>
@@ -253,36 +232,15 @@
                                     <p>Набережная Бумажного канала 12б</p>
                                 </div>
                                 <div class="floornav align-center">
-                                    <span class="floor-cunt"> <span>3</span>/4 этаж </span>
-                                    <div class="close">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
-                                             viewBox="0 0 26 26" fill="none">
-                                            <rect x="0.00195312" y="24.7488" width="35" height="1"
-                                                  transform="rotate(-45 0.00195312 24.7488)"
-                                                  fill="url(#paint0_linear_206_7372)"/>
-                                            <rect width="35" height="1"
-                                                  transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 25.457 24.7488)"
-                                                  fill="url(#paint1_linear_206_7372)"/>
-                                            <defs>
-                                                <linearGradient id="paint0_linear_206_7372" x1="17.502" y1="24.7488"
-                                                                x2="17.502" y2="25.7488" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#D0C3AE"/>
-                                                    <stop offset="1" stop-color="#A17645"/>
-                                                </linearGradient>
-                                                <linearGradient id="paint1_linear_206_7372" x1="17.5" y1="0" x2="17.5"
-                                                                y2="1" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#D0C3AE"/>
-                                                    <stop offset="1" stop-color="#A17645"/>
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
-                                    </div>
+                                    <span class="floor-cunt"> <span>3</span>/4 <sub>этаж</sub> </span>
+                                    <div class="close"><i class="icon-close-panel"></i></div>
+
                                 </div>
                             </div>
                             <div class="plan "><img src="./assets/img/atc-1.png" alt="План 1 этажа"></div>
                             <div class="planlink ">
                                 <a href="#" class="href-arrow">Открыть план этажа</a>
-                                <div class="plan-loupe"><img src="./assets/img/icons/loupe-search.svg" alt=""></div>
+                                <div class="btn-open-modal plan-loupe" data-modal-open="viewing-floor"><img src="./assets/img/icons/loupe-search.svg" alt=""></div>
                             </div>
                         </div>
                         <span class="name-modal-floor">Квартиры <span>на этаже</span></span>
@@ -377,36 +335,15 @@
                                     <p>Набережная Бумажного канала 12б</p>
                                 </div>
                                 <div class="floornav align-center">
-                                    <span class="floor-cunt"> <span>2</span>/4 этаж </span>
-                                    <div class="close">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
-                                             viewBox="0 0 26 26" fill="none">
-                                            <rect x="0.00195312" y="24.7488" width="35" height="1"
-                                                  transform="rotate(-45 0.00195312 24.7488)"
-                                                  fill="url(#paint0_linear_206_7372)"/>
-                                            <rect width="35" height="1"
-                                                  transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 25.457 24.7488)"
-                                                  fill="url(#paint1_linear_206_7372)"/>
-                                            <defs>
-                                                <linearGradient id="paint0_linear_206_7372" x1="17.502" y1="24.7488"
-                                                                x2="17.502" y2="25.7488" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#D0C3AE"/>
-                                                    <stop offset="1" stop-color="#A17645"/>
-                                                </linearGradient>
-                                                <linearGradient id="paint1_linear_206_7372" x1="17.5" y1="0" x2="17.5"
-                                                                y2="1" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#D0C3AE"/>
-                                                    <stop offset="1" stop-color="#A17645"/>
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
-                                    </div>
+                                    <span class="floor-cunt"> <span>2</span>/4 <sub>этаж</sub> </span>
+                                    <div class="close"><i class="icon-close-panel"></i></div>
+
                                 </div>
                             </div>
                             <div class="plan "><img src="./assets/img/atc-1.png" alt="План 1 этажа"></div>
                             <div class="planlink ">
                                 <a href="#" class="href-arrow">Открыть план этажа</a>
-                                <div class="plan-loupe"><img src="./assets/img/icons/loupe-search.svg" alt=""></div>
+                                <div class="btn-open-modal plan-loupe" data-modal-open="viewing-floor"><img src="./assets/img/icons/loupe-search.svg" alt=""></div>
                             </div>
                         </div>
                         <span class="name-modal-floor">Квартиры <span>на этаже</span></span>
@@ -500,36 +437,15 @@
                                     <p>Набережная Бумажного канала 12б</p>
                                 </div>
                                 <div class="floornav align-center">
-                                    <span class="floor-cunt"> <span>1</span>/4 этаж </span>
-                                    <div class="close">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
-                                             viewBox="0 0 26 26" fill="none">
-                                            <rect x="0.00195312" y="24.7488" width="35" height="1"
-                                                  transform="rotate(-45 0.00195312 24.7488)"
-                                                  fill="url(#paint0_linear_206_7372)"/>
-                                            <rect width="35" height="1"
-                                                  transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 25.457 24.7488)"
-                                                  fill="url(#paint1_linear_206_7372)"/>
-                                            <defs>
-                                                <linearGradient id="paint0_linear_206_7372" x1="17.502" y1="24.7488"
-                                                                x2="17.502" y2="25.7488" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#D0C3AE"/>
-                                                    <stop offset="1" stop-color="#A17645"/>
-                                                </linearGradient>
-                                                <linearGradient id="paint1_linear_206_7372" x1="17.5" y1="0" x2="17.5"
-                                                                y2="1" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#D0C3AE"/>
-                                                    <stop offset="1" stop-color="#A17645"/>
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
-                                    </div>
+                                    <span class="floor-cunt"> <span>1</span>/4 <sub>этаж</sub> </span>
+                                    <div class="close"><i class="icon-close-panel"></i></div>
+
                                 </div>
                             </div>
                             <div class="plan "><img src="./assets/img/atc-1.png" alt="План 1 этажа"></div>
                             <div class="planlink ">
                                 <a href="#" class="href-arrow">Открыть план этажа</a>
-                                <div class="plan-loupe"><img src="./assets/img/icons/loupe-search.svg" alt=""></div>
+                                <div class="btn-open-modal plan-loupe" data-modal-open="viewing-floor"><img src="./assets/img/icons/loupe-search.svg" alt=""></div>
                             </div>
                         </div>
                         <span class="name-modal-floor">Квартиры <span>на этаже</span></span>
@@ -640,6 +556,18 @@
 
         <div class="filters">
             <div class="container">
+                <div class="btn-open-modal btn-filter-mobile " data-modal-open="filter-floor">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21.5984 3.43682H2.39844C2.39759 5.07353 2.81523 6.68326 3.61165 8.11313C4.40807 9.543 5.55684 10.7455 6.94883 11.6064C7.62116 12.0364 8.17308 12.6302 8.55263 13.3322C8.93218 14.0341 9.12688 14.8213 9.11844 15.6192V20.6784L14.8784 19.7184V15.6C14.87 14.8021 15.0647 14.015 15.4443 13.313C15.8237 12.611 16.3757 12.0171 17.048 11.5872C18.4373 10.728 19.5843 9.52852 20.3806 8.10229C21.1768 6.67605 21.596 5.07027 21.5984 3.43682Z" stroke="url(#paint0_linear_342_774)" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_342_774" x1="11.9984" y1="3.43682" x2="11.9984" y2="20.6784" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#D0C3AE"/>
+                                <stop offset="1" stop-color="#A17645"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>Фильтры
+                </div>
+
                 <div class="filters-cnt align-center justify-between">
                     <div class="range" data-suffix=" ₽">
                         <span class="range-price">от 4 992 000 ₽ </span>
@@ -661,7 +589,6 @@
                             <input type="range" min="12" max="47" step="1" value="15">
                         </div>
                     </div>
-
                     <div class="styled-select">
                         <select name="floor">
                             <option value="">Этаж</option>
@@ -674,6 +601,7 @@
                     <button class="btn-line" type="button">Сбросить</button>
                     <button class="btn" type="button">Поиск</button>
                 </div>
+
             </div>
         </div>
 
@@ -899,222 +827,224 @@
 
         <div class="mode" data-mode="table">
             <div class="container">
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Количество комнат</th>
-                        <th>Площадь, м2</th>
-                        <th>Подъезд</th>
-                        <th>Полная цена</th>
-                        <th>Статус</th>
-                        <th>Тип недвижимости</th>
-                        <th>Этаж</th>
-                        <th>№ квартиры</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Студия</td>
-                        <td>22.9</td>
-                        <td>1</td>
-                        <td>6 412 000 ₽</td>
-                        <td><span class="status free">Свободна</span></td>
-                        <td>Квартира</td>
-                        <td>4</td>
-                        <td>23</td>
-                    </tr>
-                    <tr>
-                        <td>Студия</td>
-                        <td>22.9</td>
-                        <td>1</td>
-                        <td>6 412 000 ₽</td>
-                        <td><span class="status free">Свободна</span></td>
-                        <td>Квартира</td>
-                        <td>4</td>
-                        <td>23</td>
-                    </tr>
-                    <tr>
-                        <td>Студия</td>
-                        <td>22.1</td>
-                        <td>1</td>
-                        <td>6 412 000 ₽</td>
-                        <td><span class="status reserved">Забронирована</span></td>
-                        <td>Квартира</td>
-                        <td>3</td>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <td>Студия</td>
-                        <td>22.1</td>
-                        <td>1</td>
-                        <td>6 412 000 ₽</td>
-                        <td><span class="status sold">Продана</span></td>
-                        <td>Квартира</td>
-                        <td>3</td>
-                        <td>16</td>
-                    </tr>
-                    <tr>
-                        <td>Студия</td>
-                        <td>22.9</td>
-                        <td>1</td>
-                        <td>6 412 000 ₽</td>
-                        <td><span class="status free">Свободна</span></td>
-                        <td>Квартира</td>
-                        <td>1</td>
-                        <td>23</td>
-                    </tr>
-                    <tr>
-                        <td>Студия</td>
-                        <td>22.9</td>
-                        <td>1</td>
-                        <td>6 412 000 ₽</td>
-                        <td><span class="status free">Свободна</span></td>
-                        <td>Квартира</td>
-                        <td>4</td>
-                        <td>23</td>
-                    </tr>
-                    <tr>
-                        <td>Студия</td>
-                        <td>22.9</td>
-                        <td>1</td>
-                        <td>6 412 000 ₽</td>
-                        <td><span class="status free">Свободна</span></td>
-                        <td>Квартира</td>
-                        <td>4</td>
-                        <td>23</td>
-                    </tr>
-                    <tr>
-                        <td>Студия</td>
-                        <td>22.1</td>
-                        <td>1</td>
-                        <td>6 412 000 ₽</td>
-                        <td><span class="status reserved">Забронирована</span></td>
-                        <td>Квартира</td>
-                        <td>3</td>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <td>Студия</td>
-                        <td>22.1</td>
-                        <td>1</td>
-                        <td>6 412 000 ₽</td>
-                        <td><span class="status sold">Продана</span></td>
-                        <td>Квартира</td>
-                        <td>3</td>
-                        <td>16</td>
-                    </tr>
-                    <tr>
-                        <td>Студия</td>
-                        <td>22.9</td>
-                        <td>1</td>
-                        <td>6 412 000 ₽</td>
-                        <td><span class="status free">Свободна</span></td>
-                        <td>Квартира</td>
-                        <td>1</td>
-                        <td>23</td>
-                    </tr>
-                    <tr>
-                        <td>Студия</td>
-                        <td>22.9</td>
-                        <td>1</td>
-                        <td>6 412 000 ₽</td>
-                        <td><span class="status free">Свободна</span></td>
-                        <td>Квартира</td>
-                        <td>4</td>
-                        <td>23</td>
-                    </tr>
-                    <tr>
-                        <td>Студия</td>
-                        <td>22.9</td>
-                        <td>1</td>
-                        <td>6 412 000 ₽</td>
-                        <td><span class="status free">Свободна</span></td>
-                        <td>Квартира</td>
-                        <td>4</td>
-                        <td>23</td>
-                    </tr>
-                    <tr>
-                        <td>Студия</td>
-                        <td>22.1</td>
-                        <td>1</td>
-                        <td>6 412 000 ₽</td>
-                        <td><span class="status reserved">Забронирована</span></td>
-                        <td>Квартира</td>
-                        <td>3</td>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <td>Студия</td>
-                        <td>22.1</td>
-                        <td>1</td>
-                        <td>6 412 000 ₽</td>
-                        <td><span class="status sold">Продана</span></td>
-                        <td>Квартира</td>
-                        <td>3</td>
-                        <td>16</td>
-                    </tr>
-                    <tr>
-                        <td>Студия</td>
-                        <td>22.9</td>
-                        <td>1</td>
-                        <td>6 412 000 ₽</td>
-                        <td><span class="status free">Свободна</span></td>
-                        <td>Квартира</td>
-                        <td>1</td>
-                        <td>23</td>
-                    </tr>
-                    <tr>
-                        <td>Студия</td>
-                        <td>22.9</td>
-                        <td>1</td>
-                        <td>6 412 000 ₽</td>
-                        <td><span class="status free">Свободна</span></td>
-                        <td>Квартира</td>
-                        <td>4</td>
-                        <td>23</td>
-                    </tr>
-                    <tr>
-                        <td>Студия</td>
-                        <td>22.9</td>
-                        <td>1</td>
-                        <td>6 412 000 ₽</td>
-                        <td><span class="status free">Свободна</span></td>
-                        <td>Квартира</td>
-                        <td>4</td>
-                        <td>23</td>
-                    </tr>
-                    <tr>
-                        <td>Студия</td>
-                        <td>22.1</td>
-                        <td>1</td>
-                        <td>6 412 000 ₽</td>
-                        <td><span class="status reserved">Забронирована</span></td>
-                        <td>Квартира</td>
-                        <td>3</td>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <td>Студия</td>
-                        <td>22.1</td>
-                        <td>1</td>
-                        <td>6 412 000 ₽</td>
-                        <td><span class="status sold">Продана</span></td>
-                        <td>Квартира</td>
-                        <td>3</td>
-                        <td>16</td>
-                    </tr>
-                    <tr>
-                        <td>Студия</td>
-                        <td>22.9</td>
-                        <td>1</td>
-                        <td>6 412 000 ₽</td>
-                        <td><span class="status free">Свободна</span></td>
-                        <td>Квартира</td>
-                        <td>1</td>
-                        <td>23</td>
-                    </tr>
-                    </tbody>
-                </table>
+                <div class="table-scr">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Количество комнат</th>
+                            <th>Площадь, м2</th>
+                            <th>Подъезд</th>
+                            <th>Полная цена</th>
+                            <th>Статус</th>
+                            <th>Тип недвижимости</th>
+                            <th>Этаж</th>
+                            <th>№ квартиры</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Студия</td>
+                            <td>22.9</td>
+                            <td>1</td>
+                            <td>6 412 000 ₽</td>
+                            <td><span class="status free">Свободна</span></td>
+                            <td>Квартира</td>
+                            <td>4</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>Студия</td>
+                            <td>22.9</td>
+                            <td>1</td>
+                            <td>6 412 000 ₽</td>
+                            <td><span class="status free">Свободна</span></td>
+                            <td>Квартира</td>
+                            <td>4</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>Студия</td>
+                            <td>22.1</td>
+                            <td>1</td>
+                            <td>6 412 000 ₽</td>
+                            <td><span class="status reserved">Забронирована</span></td>
+                            <td>Квартира</td>
+                            <td>3</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Студия</td>
+                            <td>22.1</td>
+                            <td>1</td>
+                            <td>6 412 000 ₽</td>
+                            <td><span class="status sold">Продана</span></td>
+                            <td>Квартира</td>
+                            <td>3</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>Студия</td>
+                            <td>22.9</td>
+                            <td>1</td>
+                            <td>6 412 000 ₽</td>
+                            <td><span class="status free">Свободна</span></td>
+                            <td>Квартира</td>
+                            <td>1</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>Студия</td>
+                            <td>22.9</td>
+                            <td>1</td>
+                            <td>6 412 000 ₽</td>
+                            <td><span class="status free">Свободна</span></td>
+                            <td>Квартира</td>
+                            <td>4</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>Студия</td>
+                            <td>22.9</td>
+                            <td>1</td>
+                            <td>6 412 000 ₽</td>
+                            <td><span class="status free">Свободна</span></td>
+                            <td>Квартира</td>
+                            <td>4</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>Студия</td>
+                            <td>22.1</td>
+                            <td>1</td>
+                            <td>6 412 000 ₽</td>
+                            <td><span class="status reserved">Забронирована</span></td>
+                            <td>Квартира</td>
+                            <td>3</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Студия</td>
+                            <td>22.1</td>
+                            <td>1</td>
+                            <td>6 412 000 ₽</td>
+                            <td><span class="status sold">Продана</span></td>
+                            <td>Квартира</td>
+                            <td>3</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>Студия</td>
+                            <td>22.9</td>
+                            <td>1</td>
+                            <td>6 412 000 ₽</td>
+                            <td><span class="status free">Свободна</span></td>
+                            <td>Квартира</td>
+                            <td>1</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>Студия</td>
+                            <td>22.9</td>
+                            <td>1</td>
+                            <td>6 412 000 ₽</td>
+                            <td><span class="status free">Свободна</span></td>
+                            <td>Квартира</td>
+                            <td>4</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>Студия</td>
+                            <td>22.9</td>
+                            <td>1</td>
+                            <td>6 412 000 ₽</td>
+                            <td><span class="status free">Свободна</span></td>
+                            <td>Квартира</td>
+                            <td>4</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>Студия</td>
+                            <td>22.1</td>
+                            <td>1</td>
+                            <td>6 412 000 ₽</td>
+                            <td><span class="status reserved">Забронирована</span></td>
+                            <td>Квартира</td>
+                            <td>3</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Студия</td>
+                            <td>22.1</td>
+                            <td>1</td>
+                            <td>6 412 000 ₽</td>
+                            <td><span class="status sold">Продана</span></td>
+                            <td>Квартира</td>
+                            <td>3</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>Студия</td>
+                            <td>22.9</td>
+                            <td>1</td>
+                            <td>6 412 000 ₽</td>
+                            <td><span class="status free">Свободна</span></td>
+                            <td>Квартира</td>
+                            <td>1</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>Студия</td>
+                            <td>22.9</td>
+                            <td>1</td>
+                            <td>6 412 000 ₽</td>
+                            <td><span class="status free">Свободна</span></td>
+                            <td>Квартира</td>
+                            <td>4</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>Студия</td>
+                            <td>22.9</td>
+                            <td>1</td>
+                            <td>6 412 000 ₽</td>
+                            <td><span class="status free">Свободна</span></td>
+                            <td>Квартира</td>
+                            <td>4</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>Студия</td>
+                            <td>22.1</td>
+                            <td>1</td>
+                            <td>6 412 000 ₽</td>
+                            <td><span class="status reserved">Забронирована</span></td>
+                            <td>Квартира</td>
+                            <td>3</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Студия</td>
+                            <td>22.1</td>
+                            <td>1</td>
+                            <td>6 412 000 ₽</td>
+                            <td><span class="status sold">Продана</span></td>
+                            <td>Квартира</td>
+                            <td>3</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>Студия</td>
+                            <td>22.9</td>
+                            <td>1</td>
+                            <td>6 412 000 ₽</td>
+                            <td><span class="status free">Свободна</span></td>
+                            <td>Квартира</td>
+                            <td>1</td>
+                            <td>23</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
 
 
                 <div class="bumazhny-pagination align-center justify-between">
@@ -1122,6 +1052,46 @@
                     <span class="count-tabs"><span>1  /</span> 15</span>
                     <div class="pagination-btn"><img src="./assets/img/icons/rigth-arrow-line.svg" alt=""></div>
                 </div>
+
+                <aside class="panel">
+                    <div class="close"><i class="icon-close-panel"></i></div>
+                    <div class="panel-info">
+                        <div class="panel-head align-center justify-between">
+                            <div class="panel-head-name">
+                                <h4 data-field="title"></h4>
+                                <p data-field="titledesc"></p>
+                            </div>
+                            <span class="status" data-field="status"></span>
+                        </div>
+                        <div class="plan"><img data-field="plan" src="" alt=""></div>
+                        <div class="btn-open-modal plan-loupe" data-modal-open="viewing-floor"><img src="./assets/img/icons/loupe-search.svg" alt=""></div>
+                    </div>
+
+                    <div class="checker-center align-center">
+                        <div class="checker-prices align-center">
+                            <p>Цена: </p>
+                            <span data-field="price">6 412 000 ₽</span>
+                        </div>
+                        <div class="checker-prices align-center">
+                            <p>Площадь: </p>
+                            <span data-field="area">22.9 м²</span>
+                        </div>
+                    </div>
+
+                    <div class="checker-text">
+                        <h4>Характеристики:</h4>
+                        <ul>
+                            <li><span>Номер квартиры</span><span data-field="num"></span></li>
+                            <li><span>Подъезд</span><span data-field="entrance"></span></li>
+                            <li><span>Этаж</span><span data-field="floor"></span></li>
+                            <li><span>Название жилого комплекса</span><span>ЖК Бумажный</span></li>
+                            <li><span>Отделка</span><span data-field="finish"></span></li>
+                        </ul>
+
+                        <button class="btn" type="button">Подробнее</button>
+
+                    </div>
+                </aside>
 
             </div>
         </div>
@@ -1269,7 +1239,8 @@
                 <div class="mode active" data-mode="matrix">
                     <div class="chessrow"><p>4</p>
                         <div class="chessrow-flex">
-                            <div class="cell free" tabindex="0" role="button"><p><strong>№23</strong> (Студия · 22.9 м²)
+                            <div class="cell free" tabindex="0" role="button">
+                                <p><strong>№23</strong> (Студия · 22.9 м²)
                             </p>
                                 <p>6 412 000 ₽</p>
                                 <p>Свободна</p>
@@ -1438,16 +1409,18 @@
                     <aside class="panel">
                         <div class="close"><i class="icon-close-panel"></i></div>
 
-                        <div class="panel-head align-center justify-between">
-                            <h4 data-field="title"></h4>
-                            <span class="status" data-field="status"></span>
+                        <div class="panel-info">
+                            <div class="panel-head align-center justify-between">
+                                <div class="panel-head-name">
+                                    <h4 data-field="title"></h4>
+                                    <p data-field="titledesc"></p>
+                                </div>
+                                <span class="status" data-field="status"></span>
+                            </div>
+                            <div class="plan"><img data-field="plan" src="./assets/img/atc-1.png" alt="План 1 этажа"></div>
+                            <div class="btn-open-modal plan-loupe" data-modal-open="viewing-floor"><img src="./assets/img/icons/loupe-search.svg" alt=""></div>
                         </div>
 
-                        <div class="plan ">
-                            <img data-field="plan" src="./assets/img/atc-1.png" alt="План 1 этажа">
-                        </div>
-
-                        <div class="plan-loupe"><img src="./assets/img/icons/loupe-search.svg" alt=""></div>
 
                         <div class="checker-center align-center">
                             <div class="checker-prices align-center">
@@ -1470,8 +1443,10 @@
                                 <li><span>Название жилого комплекса</span><span>ЖК Бумажный</span></li>
                                 <li><span>Отделка</span><span data-field="finish"></span></li>
                             </ul>
+
+                            <button class="btn" type="button">Подробнее</button>
+
                         </div>
-                        <button class="btn" type="button">Подробнее</button>
                     </aside>
                 </div>
 
@@ -1736,22 +1711,44 @@
 
                     </div>
                     <aside class="panel">
-                        <button class="close" type="button">×</button>
-                        <h3 data-field="title"></h3>
-                        <span class="status" data-field="status"></span>
-                        <div class="plan"><img data-field="plan" src="" alt=""></div>
-                        <button type="button">⤢</button>
-                        <p><span>Цена: </span><span data-field="price"></span></p>
-                        <p><span>Площадь: </span><span data-field="area"></span></p>
-                        <h4>Характеристики:</h4>
-                        <ul>
-                            <li><span>Номер квартиры</span><span data-field="num"></span></li>
-                            <li><span>Подъезд</span><span data-field="entrance"></span></li>
-                            <li><span>Этаж</span><span data-field="floor"></span></li>
-                            <li><span>Название жилого комплекса</span><span>ЖК Бумажный</span></li>
-                            <li><span>Отделка</span><span data-field="finish"></span></li>
-                        </ul>
-                        <button class="btn" type="button">Подробнее</button>
+                        <div class="close"><i class="icon-close-panel"></i></div>
+                        <div class="panel-info">
+                            <div class="panel-head align-center justify-between">
+                                <div class="panel-head-name">
+                                    <h4 data-field="title"></h4>
+                                    <p data-field="titledesc"></p>
+                                </div>
+                                <span class="status" data-field="status"></span>
+                            </div>
+                            <div class="plan"><img data-field="plan" src="./assets/img/atc-1.png" alt="План 1 этажа"></div>
+                            <div class="btn-open-modal plan-loupe" data-modal-open="viewing-floor"><img src="./assets/img/icons/loupe-search.svg" alt=""></div>
+                        </div>
+
+                        <div class="checker-center align-center">
+                            <div class="checker-prices align-center">
+                                <p>Цена: </p>
+                                <span data-field="price">6 412 000 ₽</span>
+                            </div>
+                            <div class="checker-prices align-center">
+                                <p>Площадь: </p>
+                                <span data-field="area">22.9 м²</span>
+                            </div>
+                        </div>
+
+                        <div class="checker-text">
+                            <h4>Характеристики:</h4>
+                            <ul>
+                                <li><span>Номер квартиры</span><span data-field="num"></span></li>
+                                <li><span>Подъезд</span><span data-field="entrance"></span></li>
+                                <li><span>Этаж</span><span data-field="floor"></span></li>
+                                <li><span>Название жилого комплекса</span><span>ЖК Бумажный</span></li>
+                                <li><span>Отделка</span><span data-field="finish"></span></li>
+                            </ul>
+
+                            <button class="btn" type="button">Подробнее</button>
+
+                        </div>
+
                     </aside>
                 </div>
 
@@ -1986,22 +1983,49 @@
 
                     </div>
                     <aside class="panel">
-                        <button class="close" type="button">×</button>
-                        <h3 data-field="title"></h3>
-                        <span class="status" data-field="status"></span>
-                        <div class="plan"><img data-field="plan" src="" alt=""></div>
-                        <button type="button">⤢</button>
-                        <p><span>Цена: </span><span data-field="price"></span></p>
-                        <p><span>Площадь: </span><span data-field="area"></span></p>
-                        <h4>Характеристики:</h4>
-                        <ul>
-                            <li><span>Номер квартиры</span><span data-field="num"></span></li>
-                            <li><span>Подъезд</span><span data-field="entrance"></span></li>
-                            <li><span>Этаж</span><span data-field="floor"></span></li>
-                            <li><span>Название жилого комплекса</span><span>ЖК Бумажный</span></li>
-                            <li><span>Отделка</span><span data-field="finish"></span></li>
-                        </ul>
-                        <button class="btn" type="button">Подробнее</button>
+                        <div class="close"><i class="icon-close-panel"></i></div>
+
+
+                        <div class="panel-info">
+                            <div class="panel-head align-center justify-between">
+                                <div class="panel-head-name">
+                                    <h4 data-field="title"></h4>
+                                    <p data-field="titledesc"></p>
+                                </div>
+                                <span class="status" data-field="status"></span>
+                            </div>
+                            <div class="plan"><img data-field="plan" src="./assets/img/atc-1.png" alt="План 1 этажа"></div>
+                            <div class="btn-open-modal plan-loupe" data-modal-open="viewing-floor"><img src="./assets/img/icons/loupe-search.svg" alt=""></div>
+                        </div>
+
+                        <div class="checker-center align-center">
+                            <div class="checker-prices align-center">
+                                <p>Цена: </p>
+                                <span data-field="price">6 412 000 ₽</span>
+                            </div>
+                            <div class="checker-prices align-center">
+                                <p>Площадь: </p>
+                                <span data-field="area">22.9 м²</span>
+                            </div>
+                        </div>
+
+                        <div class="checker-text">
+                            <h4>Характеристики:</h4>
+                            <ul>
+                                <li><span>Номер квартиры</span><span data-field="num"></span></li>
+                                <li><span>Подъезд</span><span data-field="entrance"></span></li>
+                                <li><span>Этаж</span><span data-field="floor"></span></li>
+                                <li><span>Название жилого комплекса</span><span>ЖК Бумажный</span></li>
+                                <li><span>Отделка</span><span data-field="finish"></span></li>
+                            </ul>
+
+                            <button class="btn" type="button">Подробнее</button>
+
+                        </div>
+
+
+
+
                     </aside>
                 </div>
             </div>
@@ -2009,69 +2033,131 @@
     </section>
     <section class="view" data-view="floor">
         <div class="floorhead">
-            <label>Выберите этаж:
-                <select>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                </select>
-            </label>
-            <div class="stats active" data-floor="1">
-                <div><p>Квартиры</p>
-                    <p>14.3–22.9 м²</p></div>
-                <div><p>Стоимость</p>
-                    <p>от 5.1 млн ₽</p></div>
-                <div><p>Количество</p>
-                    <p>6 квартир</p></div>
+            <div class="container">
+                <div class="floorhead-flex align-center justify-between">
+                    <div class="select-floor align-center">
+                        <p>Выберите этаж:</p>
+                        <div class="selected-floor styled-select">
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="quantity-apart-col">
+                        <div class="all-floor-pic d-flex">
+                            <img src="./assets/img/icon-compass-2.png" alt="compass">
+                        </div>
+                        <div class="quantity-apart align-start">
+                            <div class="quantity-count"><p>Квартиры</p><strong>14-23 м²</strong></div>
+                            <div class="quantity-count"><p>Стоимость</p><strong>от 4 млн ₽</strong></div>
+                            <div class="quantity-count"><p>Количество</p><strong>6 квартир</strong></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="stats" data-floor="2">
-                <div><p>Квартиры</p>
-                    <p>22.1 м²</p></div>
-                <div><p>Стоимость</p>
-                    <p>от 6.4 млн ₽</p></div>
-                <div><p>Количество</p>
-                    <p>8 квартир</p></div>
-            </div>
-            <div class="stats" data-floor="3">
-                <div><p>Квартиры</p>
-                    <p>22.1 м²</p></div>
-                <div><p>Стоимость</p>
-                    <p>от 6.4 млн ₽</p></div>
-                <div><p>Количество</p>
-                    <p>8 квартир</p></div>
-            </div>
-            <div class="stats" data-floor="4">
-                <div><p>Квартиры</p>
-                    <p>22.9 м²</p></div>
-                <div><p>Стоимость</p>
-                    <p>от 6.4 млн ₽</p></div>
-                <div><p>Количество</p>
-                    <p>8 квартир</p></div>
+            <div class="all-floor">
+                <div class="container">
+                    <div class="floorplan active" data-floor="1">
+                        <div class="all-floor-flex align-start">
+                            <div class="all-floor-pic d-flex">
+                                <img src="./assets/img/icon-compass-2.png" alt="compass">
+                            </div>
+
+                            <div class="floor-block d-flex">
+                                <div class="floor-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="830" height="600" viewBox="0 0 830 600" fill="none">
+                                        <rect width="830" height="600" fill="url(#pattern0_343_6804)"/>
+                                        <g class="open-panel" data-apt="{&quot;etag&quot;:&quot;1&quot;,&quot;id&quot;:191,&quot;img&quot;:&quot;./assets/img/atc-1.png&quot;,&quot;message&quot;:&quot;&quot;,&quot;namejk&quot;:&quot;Бумажный&quot;,&quot;num&quot;:&quot;1&quot;,&quot;paradnaya&quot;:&quot;1&quot;,&quot;pl&quot;:&quot;14.3 м²&quot;,&quot;price&quot;:&quot;5 148 000 ₽&quot;,&quot;result&quot;:&quot;success&quot;,&quot;status&quot;:&quot;Свободна&quot;,&quot;statuscolor&quot;:&quot;#6AC57D&quot;,&quot;typekv&quot;:&quot;Квартира&quot;,&quot;url&quot;:&quot;studiya-14-3-m2.html&quot;}">
+                                            <path opacity="0.6" d="M142.5 37L109.5 164.5H185.5V278.5H280V37H142.5Z" fill="url(#paint0_linear_343_6804)"/>
+                                        </g>
+                                        <g class="open-panel" data-apt="{&quot;etag&quot;:&quot;1&quot;,&quot;id&quot;:192,&quot;img&quot;:&quot;./assets/img/atc-1.png&quot;,&quot;message&quot;:&quot;&quot;,&quot;namejk&quot;:&quot;Бумажный&quot;,&quot;num&quot;:&quot;2&quot;,&quot;paradnaya&quot;:&quot;1&quot;,&quot;pl&quot;:&quot;16.8 м²&quot;,&quot;price&quot;:&quot;5 480 000 ₽&quot;,&quot;result&quot;:&quot;success&quot;,&quot;status&quot;:&quot;Забронирована&quot;,&quot;statuscolor&quot;:&quot;#E8C44D&quot;,&quot;typekv&quot;:&quot;Квартира&quot;,&quot;url&quot;:&quot;studiya-16-8-m2.html&quot;}">
+                                            <rect opacity="0.6" x="288" y="37" width="129" height="242" fill="url(#paint1_linear_343_6804)"/>
+                                        </g>
+                                        <g class="open-panel" data-apt="{&quot;etag&quot;:&quot;1&quot;,&quot;id&quot;:193,&quot;img&quot;:&quot;./assets/img/atc-1.png&quot;,&quot;message&quot;:&quot;&quot;,&quot;namejk&quot;:&quot;Бумажный&quot;,&quot;num&quot;:&quot;3&quot;,&quot;paradnaya&quot;:&quot;1&quot;,&quot;pl&quot;:&quot;18.2 м²&quot;,&quot;price&quot;:&quot;5 620 000 ₽&quot;,&quot;result&quot;:&quot;success&quot;,&quot;status&quot;:&quot;Свободна&quot;,&quot;statuscolor&quot;:&quot;#6AC57D&quot;,&quot;typekv&quot;:&quot;Квартира&quot;,&quot;url&quot;:&quot;studiya-18-2-m2.html&quot;}">
+                                            <rect opacity="0.6" x="424" y="37" width="129" height="242" fill="url(#paint2_linear_343_6804)"/>
+                                        </g>
+                                        <g class="open-panel" data-apt="{&quot;etag&quot;:&quot;1&quot;,&quot;id&quot;:194,&quot;img&quot;:&quot;./assets/img/atc-1.png&quot;,&quot;message&quot;:&quot;&quot;,&quot;namejk&quot;:&quot;Бумажный&quot;,&quot;num&quot;:&quot;4&quot;,&quot;paradnaya&quot;:&quot;1&quot;,&quot;pl&quot;:&quot;20.1 м²&quot;,&quot;price&quot;:&quot;5 810 000 ₽&quot;,&quot;result&quot;:&quot;success&quot;,&quot;status&quot;:&quot;Продана&quot;,&quot;statuscolor&quot;:&quot;#E05252&quot;,&quot;typekv&quot;:&quot;Квартира&quot;,&quot;url&quot;:&quot;studiya-20-1-m2.html&quot;}">
+                                            <rect opacity="0.6" x="443" y="366" width="116" height="197" fill="url(#paint3_linear_343_6804)"/>
+                                        </g>
+                                        <g class="open-panel" data-apt="{&quot;etag&quot;:&quot;1&quot;,&quot;id&quot;:195,&quot;img&quot;:&quot;./assets/img/atc-1.png&quot;,&quot;message&quot;:&quot;&quot;,&quot;namejk&quot;:&quot;Бумажный&quot;,&quot;num&quot;:&quot;5&quot;,&quot;paradnaya&quot;:&quot;1&quot;,&quot;pl&quot;:&quot;21.5 м²&quot;,&quot;price&quot;:&quot;5 980 000 ₽&quot;,&quot;result&quot;:&quot;success&quot;,&quot;status&quot;:&quot;Продана&quot;,&quot;statuscolor&quot;:&quot;#E05252&quot;,&quot;typekv&quot;:&quot;Квартира&quot;,&quot;url&quot;:&quot;studiya-21-5-m2.html&quot;}">
+                                            <rect opacity="0.6" x="306" y="366" width="129" height="197" fill="url(#paint4_linear_343_6804)"/>
+                                        </g>
+                                        <g class="open-panel" data-apt="{&quot;etag&quot;:&quot;1&quot;,&quot;id&quot;:196,&quot;img&quot;:&quot;plans/1-6.jpg&quot;,&quot;message&quot;:&quot;&quot;,&quot;namejk&quot;:&quot;Бумажный&quot;,&quot;num&quot;:&quot;6&quot;,&quot;paradnaya&quot;:&quot;1&quot;,&quot;pl&quot;:&quot;22.9 м²&quot;,&quot;price&quot;:&quot;6 412 000 ₽&quot;,&quot;result&quot;:&quot;success&quot;,&quot;status&quot;:&quot;Забронирована&quot;,&quot;statuscolor&quot;:&quot;#E8C44D&quot;,&quot;typekv&quot;:&quot;Квартира&quot;,&quot;url&quot;:&quot;studiya-22-9-m2.html&quot;}">
+                                            <path opacity="0.6" d="M298.5 366.5H185.5L185 480L166.5 466.5V522.5L192.5 541L191.5 542.5L219 563H298.5V366.5Z" fill="url(#paint5_linear_343_6804)"/>
+                                        </g>
+                                        <defs>
+                                            <pattern id="pattern0_343_6804" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                <use xlink:href="#image0_343_6804" transform="scale(0.0003837 0.000530786)"/>
+                                            </pattern>
+                                            <linearGradient id="paint0_linear_343_6804" x1="194.75" y1="37" x2="194.75" y2="278.5" gradientUnits="userSpaceOnUse"><stop stop-color="#45B570"/><stop offset="1" stop-color="#259350"/></linearGradient>
+                                            <linearGradient id="paint1_linear_343_6804" x1="352.5" y1="37" x2="352.5" y2="279" gradientUnits="userSpaceOnUse"><stop stop-color="#E6D65D"/><stop offset="1" stop-color="#CCAB40"/></linearGradient>
+                                            <linearGradient id="paint2_linear_343_6804" x1="488.5" y1="37" x2="488.5" y2="279" gradientUnits="userSpaceOnUse"><stop stop-color="#45B570"/><stop offset="1" stop-color="#259350"/></linearGradient>
+                                            <linearGradient id="paint3_linear_343_6804" x1="501" y1="366" x2="501" y2="563" gradientUnits="userSpaceOnUse"><stop stop-color="#F04D4D"/><stop offset="1" stop-color="#C44D4D"/></linearGradient>
+                                            <linearGradient id="paint4_linear_343_6804" x1="370.5" y1="366" x2="370.5" y2="563" gradientUnits="userSpaceOnUse"><stop stop-color="#F04D4D"/><stop offset="1" stop-color="#C44D4D"/></linearGradient>
+                                            <linearGradient id="paint5_linear_343_6804" x1="232.5" y1="366.5" x2="232.5" y2="563" gradientUnits="userSpaceOnUse"><stop stop-color="#E6D65D"/><stop offset="1" stop-color="#CCAB40"/></linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <img src="./assets/img/floor-apart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floorplan" data-floor="2">
+
+                    </div>
+                    <div class="floorplan" data-floor="3">
+
+                    </div>
+                    <div class="floorplan" data-floor="4">
+
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="plan-grid active" data-floor="1">
-            <div class="zone free"><p>1</p>
-                <aside class="panel">
-                    <button class="close" type="button">×</button>
-                    <h3>Квартира №1 (Студия · 14.3 м²)</h3><span class="status free">Свободна</span>
-                    <div class="plan"><img src="./assets/img/atc-1.png" alt="Планировка квартиры №1"></div>
-                    <button type="button">⤢</button>
-                    <p><span>Цена: </span><span>5 148 000 ₽</span></p>
-                    <p><span>Площадь: </span><span>14.3 м²</span></p><h4>Характеристики:</h4>
-                    <ul>
-                        <li><span>Номер квартиры</span><span>1</span></li>
-                        <li><span>Подъезд</span><span>1</span></li>
-                        <li><span>Этаж</span><span>1</span></li>
-                        <li><span>Название жилого комплекса</span><span>ЖК Бумажный</span></li>
-                        <li><span>Отделка</span><span>Подчистовая</span></li>
-                    </ul>
-                    <button class="btn" type="button">Подробнее</button>
-                </aside>
+        <aside class="panel">
+            <div class="close"><i class="icon-close-panel"></i></div>
+
+            <div class="panel-info">
+                <div class="panel-head align-center justify-between">
+                    <div class="panel-head-name">
+                        <h4 data-field="title"></h4>
+                        <p data-field="titledesc"></p>
+                    </div>
+                    <span class="status" data-field="status"></span>
+                </div>
+                <div class="plan"><img data-field="plan" src="./assets/img/atc-1.png" alt="План 1 этажа"></div>
+                <div class="btn-open-modal plan-loupe" data-modal-open="viewing-floor"><img src="./assets/img/icons/loupe-search.svg" alt=""></div>
             </div>
 
-        </div>
+            <div class="checker-center align-center">
+                <div class="checker-prices align-center">
+                    <p>Цена: </p>
+                    <span data-field="price">6 412 000 ₽</span>
+                </div>
+                <div class="checker-prices align-center">
+                    <p>Площадь: </p>
+                    <span data-field="area">22.9 м²</span>
+                </div>
+            </div>
 
+            <div class="checker-text">
+                <h4>Характеристики:</h4>
+                <ul>
+                    <li><span>Номер квартиры</span><span data-field="num"></span></li>
+                    <li><span>Подъезд</span><span data-field="entrance"></span></li>
+                    <li><span>Этаж</span><span data-field="floor"></span></li>
+                    <li><span>Название жилого комплекса</span><span>ЖК Бумажный</span></li>
+                    <li><span>Отделка</span><span data-field="finish"></span></li>
+                </ul>
+
+                <button class="btn" type="button">Подробнее</button>
+
+            </div>
+
+        </aside>
     </section>
 </div>
 
@@ -2123,6 +2209,63 @@
         </div>
     </div>
 </footer>
+
+
+
+<div class="modal-overlay" id="filter-floor" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" data-modal-close aria-label="Закрыть"></button>
+        <div class="filters-cnt flex-column">
+            <h3>фильтры</h3>
+
+            <div class="filters-col flex-column">
+                <div class="range" data-suffix=" ₽">
+                    <span class="range-price">от 4 992 000 ₽ </span>
+
+                    <span class="range-price">до 14 040 000  ₽ </span>
+                    <div class="track">
+                        <span class="fill"></span>
+                        <input type="range" min="4000000" max="14000000" step="1000" value="4992000">
+                        <input type="range" min="4000000" max="14000000" step="1000" value="14040000">
+                    </div>
+                </div>
+                <div class="range" data-suffix=" м²">
+                    <span class="range-price">от 12 м²</span>
+
+                    <span class="range-price">до 15 м²</span>
+                    <div class="track">
+                        <span class="fill"></span>
+                        <input type="range" min="12" max="47" step="1" value="12">
+                        <input type="range" min="12" max="47" step="1" value="15">
+                    </div>
+                </div>
+                <div class="styled-select">
+                    <select name="floor">
+                        <option value="">Этаж</option>
+                        <option value="1">1 этаж</option>
+                        <option value="2">2 этаж</option>
+                        <option value="3">3 этаж</option>
+                        <option value="4">4 этаж</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filters-col flex-column">
+                <button class="btn" type="button">Поиск</button>
+                <button class="btn-line" type="button">Сбросить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-overlay" id="viewing-floor" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" data-modal-close aria-label="Закрыть"></button>
+
+          <div class="modal-overlay-photo d-center">
+              <img src="" alt="">
+          </div>
+    </div>
+</div>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.js"></script>

@@ -55,7 +55,6 @@ ul, li{
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    color: var(--white);
 }
 .padding-top {
     padding-top: 150px;
@@ -2958,7 +2957,13 @@ footer{
     }
 }
 
-
+@media (max-width: 1399px){
+    .count-floor {
+        left: 15px;
+        top: 15px;
+        padding: 2px 9px;
+    }
+}
 @media (max-width: 1199px){
     h1 {
         font-size: 32px;
@@ -3842,6 +3847,9 @@ footer{
     .projects-cnt .href-arrow {
         padding: 20px 8px;
         margin-top: 25px;
+    }
+    .sales-name-left, .sales-name-right {
+        padding: 13px 14px;
     }
 }
 
