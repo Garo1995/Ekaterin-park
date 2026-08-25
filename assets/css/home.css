@@ -1665,6 +1665,9 @@ ul, li{
     color: #FFFFFF;
     margin-top: 60px;
 }
+.see-more:hover{
+    text-decoration: unset;
+}
 .might-photo{
     display: flex;
     border-left: 1px solid var(--white-opacity);
