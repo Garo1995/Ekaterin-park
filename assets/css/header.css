@@ -59,7 +59,9 @@ header{
     height: 40px;
     background: unset;
 }
-
+.href-soc:hover{
+    border: 1px solid #D0C3AE;
+}
 .header-phone{
     gap: 4px;
 }

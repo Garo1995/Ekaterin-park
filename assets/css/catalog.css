@@ -1939,13 +1939,6 @@ tbody tr:hover {
     .checker-text ul li {
         font-size: 15px;
     }
-    .building-slid__photo>img {
-        width: 100%;
-        object-fit: cover;
-        display: block;
-        height: 409px;
-        object-position: left;
-    }
 
     .floorlist-price .btn {
         padding: 7px 10px;
@@ -1954,13 +1947,7 @@ tbody tr:hover {
     .floorlist-price {
         gap: 20px;
     }
-    .building-slid-svg svg {
-        width: 100%;
-        height: 100%;
-        display: block;
-        object-fit: cover;
-        object-position: left;
-    }
+
     .name-modal-floor {
         padding: 19px 15px;
     }
@@ -1989,9 +1976,26 @@ tbody tr:hover {
 
 
 
+    .building-slid__photo>img {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        height: 430px;
+        object-position: 20%;
+    }
 
-
-
-
-
+}
+@media (max-width: 460px){
+    .building-slid__photo>img {
+        height: 430px;
+        object-position: 20%;
+    }
+    .building-slid-svg{
+        left: -41px;
+        top: 1px;
+    }
+    .building-slid-svg svg {
+        width: 156%;
+        height: 103%;
+    }
 }

@@ -269,10 +269,60 @@
 
 
 
+.request-been h3{
+    margin-bottom: 20px;
+}
+.request-been p{
+    color: var(--text-dark);
+}
+.request-been h4{
+    margin-top: 35px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--text-dark);
 
-
-
-
+}
+.request-been ul{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.request-been ul li{
+    color: var(--text-dark);
+    position: relative;
+    padding-left: 40px;
+}
+.request-been ul li:before{
+    content: url("../img/icons/icon-check.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.request-been .btn{
+    margin-top: 30px;
+    width: 100%;
+}
+.request-been small{
+    display: block;
+    margin-top: 27px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #8C8C8C;
+}
+.modal-soc{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.modal-soc .href-soc{
+    border: 1px solid #E5E5E5;
+}
+.modal-soc .phone-number{
+    color: var(--text-dark);
+}
 
 
 
@@ -302,7 +352,7 @@
 @media (max-width: 575px) {
     .modal-box {
         max-width: 470px;
-        padding: 70px 15px 30px;
+        padding: 60px 15px 30px;
     }
     .modal-box h3 {
         max-width: 280px;
@@ -338,4 +388,30 @@
         padding: 11px 20px;
         font-size: 15px;
     }
+
+    .request-been h4 {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    .request-been ul li {
+        padding-left: 30px;
+    }
+    .request-been ul li:before {
+        top: 4px;
+    }
+    .request-been .btn {
+        margin-top: 20px;
+    }
+    .request-been small {
+        margin-top: 20px;
+    }
+    .request-been ul {
+        margin-top: 13px;
+        gap: 8px;
+    }
+    .request-been h3 {
+        margin-bottom: 14px;
+    }
+
+
 }

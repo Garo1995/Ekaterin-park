@@ -6,6 +6,24 @@
     });
 })();
 
+
+
+
+(function () {
+    const inputs = document.querySelectorAll('input[name="phone"]');
+    if (!inputs.length) return;
+    if (typeof IMask === 'undefined') {
+        console.warn('IMask не загружен');
+        return;
+    }
+    inputs.forEach(function (input) {
+        IMask(input, {
+            mask: '+{7} (000) 000-00-00'
+        });
+    });
+})();
+
+
 /*------------------ open-menu-start ----------------*/
 
 
@@ -731,45 +749,55 @@ document.querySelectorAll('.might-slider').forEach(function (sliderEl) {
 /*------------------ accordion-start ----------------*/
 
 
+(function () {
+    // Находим ВСЕ аккордеоны на странице, а не только первый
+    const accordions = document.querySelectorAll('.faq-accordion');
+    if (!accordions.length) return;
 
-(function(){
-    const accordion = document.querySelector('.faq-accordion');
-    if (!accordion) return;
-
-    const items = accordion.querySelectorAll('.faq-item');
-
-    function openItem(item){
+    function openItem(item) {
         const body = item.querySelector('.faq-body');
         body.style.maxHeight = body.scrollHeight + 'px';
     }
-    function closeItem(item){
+
+    function closeItem(item) {
         const body = item.querySelector('.faq-body');
         body.style.maxHeight = 0;
     }
 
-    items.forEach(function(item){
-        const header = item.querySelector('.faq-header');
+    // Проходим по каждому аккордеону отдельно
+    accordions.forEach(function (accordion) {
+        const items = accordion.querySelectorAll('.faq-item');
 
-        if (item.classList.contains('active')) openItem(item);
+        items.forEach(function (item) {
+            const header = item.querySelector('.faq-header');
 
-        header.addEventListener('click', function(){
-            const isActive = item.classList.contains('active');
+            if (item.classList.contains('active')) openItem(item);
 
-            items.forEach(function(i){
-                i.classList.remove('active');
-                closeItem(i);
+            header.addEventListener('click', function () {
+                const isActive = item.classList.contains('active');
+
+                // Закрываем только элементы ЭТОГО аккордеона,
+                // а не все на странице
+                items.forEach(function (i) {
+                    i.classList.remove('active');
+                    closeItem(i);
+                });
+
+                if (!isActive) {
+                    item.classList.add('active');
+                    openItem(item);
+                }
             });
-
-            if (!isActive){
-                item.classList.add('active');
-                openItem(item);
-            }
         });
     });
 
-    window.addEventListener('resize', function(){
-        items.forEach(function(item){
-            if (item.classList.contains('active')) openItem(item);
+    // Пересчитываем высоту активных элементов во всех аккордеонах при ресайзе
+    window.addEventListener('resize', function () {
+        accordions.forEach(function (accordion) {
+            const items = accordion.querySelectorAll('.faq-item');
+            items.forEach(function (item) {
+                if (item.classList.contains('active')) openItem(item);
+            });
         });
     });
 })();
@@ -1010,13 +1038,14 @@ const sliderImages = new Swiper('.catalog-slider', {
 
 
 
-
 document.addEventListener("DOMContentLoaded", () => {
     const cookieBlock = document.querySelector(".cookie");
 
+    // Если блока .cookie нет на странице — скрипт дальше не выполняется
     if (!cookieBlock) return;
 
-    const acceptBtn = document.querySelector(".cookie__btn");
+    // Находим ВСЕ кнопки с этим классом, а не только первую
+    const acceptBtns = document.querySelectorAll(".cookie__btn");
 
     if (!localStorage.getItem("cookieAccepted")) {
         cookieBlock.style.display = "flex";
@@ -1024,12 +1053,13 @@ document.addEventListener("DOMContentLoaded", () => {
         cookieBlock.style.display = "none";
     }
 
-    acceptBtn.addEventListener("click", () => {
-        localStorage.setItem("cookieAccepted", "true");
-        cookieBlock.style.display = "none";
+    // Вешаем обработчик на каждую кнопку отдельно
+    acceptBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            localStorage.setItem("cookieAccepted", "true");
+            cookieBlock.style.display = "none";
+        });
     });
-
-
 });
 
 const wrap = document.getElementById('fabWrap');
