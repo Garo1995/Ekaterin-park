@@ -76,7 +76,6 @@ ul, li{
     line-height: 100%;
     text-transform: uppercase;
     color: var(--white);
-    transition: 0.3s;
     white-space: nowrap;
     padding: 22px 36px;
     position: relative;
@@ -838,6 +837,7 @@ ul, li{
     display: flex;
     align-items: center;
     gap: 20px;
+    color: var(--white);
 }
 .modern-info ul li:before{
     content: "";
@@ -2291,7 +2291,7 @@ footer{
 
 
 
-@media (max-width: 1699px){
+@media (max-width: 1799px){
     h1 {
         font-size: 50px;
     }
@@ -2445,7 +2445,6 @@ footer{
     .might-look-apart {
         max-width: calc(100% - 400px);
     }
-
 
 
 

@@ -1261,9 +1261,11 @@ tbody tr:hover {
         max-width: 580px;
     }
     .panel-info {
-        padding: 24px 40px 0;
+        padding: 24px 45px 0 40px;
     }
-
+    .checker-prices {
+        padding: 20px 27px 20px 30px;
+    }
     .close {
         top: 28px;
         right: 15px;
